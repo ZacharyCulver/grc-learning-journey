@@ -195,16 +195,16 @@
 Correct. A Man-in-the-middle (MitM) attack places the attacker between two communicating parties. The attacker intercepts traffic and can alter, relay, or forge responses while both sides believe they're communicating directly with each other.
 </details>
 <details>
-<summary>B. Phishing attack
-Incorrect. A phishing attack tricks a victim into revealing information through fraudulent messages.</summary>
+<summary>B. Phishing attack</summary>
+Incorrect. A phishing attack tricks a victim into revealing information through fraudulent messages.
 </details>
 <details>
-<summary>C. Denial of service attack
-Incorrect. A denial of service (DOS) attack overwhelms resources to make a service unavailable.</summary>
+<summary>C. Denial of service attack</summary>
+Incorrect. A denial of service (DOS) attack overwhelms resources to make a service unavailable.
 </details>
 <details>
-<summary>SQL injection attack
-Incorrect. A SQL injection attack injects malicious SAL commands into a database query.</summary>
+<summary>SQL injection attack</summary>
+Incorrect. A SQL injection attack injects malicious SAL commands into a database query.
 </details>
 
 33. In which type of attack does the attacker disguise as a trusted entity to steal sensitive information?
