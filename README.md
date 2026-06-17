@@ -22,6 +22,7 @@ Expected retirement: May 2027
 ## Certifications In Progress
 
 - CompTIA Security+
+- ISC2 CGRC
 
 ## Portfolio Goals
 
