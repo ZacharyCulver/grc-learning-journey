@@ -21,6 +21,7 @@ Incorrect. A private cloud offers the highest level of control as the infrastruc
 Incorrect. IaaS provides customers with the most control over the operating systems and applications, as they manage the virtualized hardware resources.
 </details>
 
+
 2. Which type of encryption is used for securing data in transit?
 <details>
 <summary>A. Symmetric encryption</summary>
@@ -38,6 +39,7 @@ Incorrect. Salting is a technique used to protect stored passwords, not for encr
 <summary>D. Hashing</summary>
 Incorrect. Hashing is a one-way function used to verify data integrity, not to encrypt and decrypt data in transit.
 </details>
+
 
 3. Which protocol is essential for secure web browsing?
 <details>
@@ -57,6 +59,7 @@ Incorrect. SFTP (SSH File Transfer Protocol) is used for secure file transfers, 
 Correct. HTTPS (Hypertext Transfer Protocol Secure) encrypts the communication between a web browser and a web server, ensuring confidentiality and integrity for web browsing.
 </details>
 
+
 4. What is the primary purpose of a digital certificate?
 <details>
 <summary>A. User authentication</summary>
@@ -74,6 +77,7 @@ Correct. A digital certificate, issued by a Certificate Authority (CA), binds a 
 <summary>D. Provide secure wireless connection</summary>
 Incorrect. While certificates can be used in the authentication process for some secure wireless networks (like WPA2-Enterprise), this is not their primary purpose.
 </details>
+
 
 5. Which technology is essential for building a secure network perimeter?
 <details>
@@ -93,6 +97,7 @@ Incorrect. A load balancer distributes traffic across multiple servers to improv
 Correct. A firewall is a fundamental network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules, forming the core of a secure perimeter.
 </details>
 
+
 6. Which type of firewall inspects the state of active connections?
 <details>
 <summary>A. Stateful firewall</summary>
@@ -110,6 +115,7 @@ Incorrect. A WAF (Web Application Firewall) operates at the application layer to
 <summary>D. Packet-filtering firewall</summary>
 Incorrect. A packet-filtering firewall is a stateless firewall that inspects packets individually and does not track the state of connections.
 </details>
+
 
 7. What is the main function of a SIEM system?
 <details>
@@ -129,6 +135,7 @@ Incorrect. An Intrusion Prevention System (IPS) is designed to actively block at
 Incorrect. Data Loss Prevention (DLP) tools are specifically focused on preventing sensitive data from leaving the organization, which is a different function from a SIEM.
 </details>
 
+
 8. Which two factors contribute to a strong security posture?
 <details>
 <summary>A. Regular security audits</summary>
@@ -146,6 +153,7 @@ Incorrect. Modern security guidance (like NIST) de-emphasizes frequent forced pa
 <summary>D. Single sign-on implementation</summary>
 Incorrect. While SSO can improve user experience and centralize authentication management, it can also create a single point of failure if not implemented securely. It does not inherently guarantee a strong posture.
 </details>
+
 
 9. Which type of attack involves bombarding a DNS server with traffic to overwhelm it?
 <details>
@@ -165,6 +173,7 @@ Incorrect. DNS tunneling involves encoding data of other programs or protocols i
 Correct. A DNS amplification attack is a type of Distributed Denial of Service (DDoS) attack where an attacker uses open DNS resolvers to flood a target with a large volume of DNS response traffic.
 </details>
 
+
 10. Which cryptographic algorithm is commonly used for secure wireless communication?
 <details>
 <summary>A. AES</summary>
@@ -182,6 +191,7 @@ Incorrect. DES (Data Encryption Standard) is an older and weaker encryption algo
 <summary>D. RSA</summary>
 Incorrect. RSA is an asymmetric algorithm often used for key exchange or digital signatures, but AES (a symmetric algorithm) is used for the bulk encryption of the wireless data itself.
 </details>
+
 
 11. Which attack involves overwhelming a system with traffic to make it unavailable?
 <details>
@@ -201,6 +211,7 @@ Correct. A DDoS attack uses multiple compromised systems (a botnet) to generate 
 Incorrect. A Man-in-the-middle (MitM) attack involves an attacker secretly intercepting and relaying communications between two parties.
 </details>
 
+
 12. Identify two common methods used in multifactor authentication.
 <details>
 <summary>A. Security tokens</summary>
@@ -218,6 +229,7 @@ Incorrect. A password is a single factor (something you know). MFA requires the 
 <summary>D. Usernames</summary>
 Incorrect. A username is an identifier, not an authentication factor.
 </details>
+
 
 13. What is the main goal of an incident response plan?
 <details>
@@ -237,6 +249,7 @@ Incorrect. Data encryption is a security control used to protect data, not the m
 Correct. The primary goal of an incident response plan is to provide a structured, organized, and effective approach to handling security incidents, thereby minimizing damage and reducing recovery time.
 </details>
 
+
 14. Identify two characteristics of a DDoS attack.
 <details>
 <summary>A. Overwhelms a target's resources</summary>
@@ -254,6 +267,7 @@ Correct. A DDoS attack leverages a network of compromised computers (a botnet) t
 <summary>D. Targets multiple systems</summary>
 Incorrect. A DDoS attack typically focuses its combined traffic on a single target system or service to maximize its impact.
 </details>
+
 
 15. Select two protocols commonly used for securing email communication.
 <details>
@@ -273,6 +287,7 @@ Incorrect. FTP (File Transfer Protocol) is used for transferring files, not for 
 Correct. PGP (Pretty Good Privacy) is an encryption program that provides cryptographic privacy and authentication for data communication, commonly used for securing emails.
 </details>
 
+
 16. Select two primary goals of a security awareness training program.
 <details>
 <summary>A. Educate employees about security policies</summary>
@@ -290,6 +305,7 @@ Incorrect. This is a technical skill unrelated to security awareness training.
 <summary>D. Increase awareness about social engineering attacks</summary>
 Correct. One of the most important goals of security awareness training is to teach employees how to recognize and respond to social engineering tactics like phishing, vishing, and tailgating.
 </details>
+
 
 17. What does PKI stand for in network security?
 <details>
@@ -309,6 +325,7 @@ Incorrect. This is not a standard cybersecurity term.
 Incorrect. This is not a standard cybersecurity term.
 </details>
 
+
 18. What is the primary function of RAID technology?
 <details>
 <summary>A. Provide data encryption</summary>
@@ -326,6 +343,7 @@ Incorrect. Some RAID levels (like RAID 0) can increase performance and capacity,
 <summary>D. Improve data redundancy and performance</summary>
 Correct. RAID (Redundant Array of Independent Disks) combines multiple physical disk drives into one or more logical units for the purposes of data redundancy, performance improvement, or both.
 </details>
+
 
 19. Which two are essential components of a security incident response plan?
 <details>
@@ -345,6 +363,7 @@ Incorrect. Data backup is a preventative and recovery control, but it is not a c
 Incorrect. Data encryption is a security control to protect data, not a component of the response process.
 </details>
 
+
 20. Select two common cryptographic algorithms used in hashing.
 <details>
 <summary>A. MD5</summary>
@@ -362,6 +381,7 @@ Correct. SHA (Secure Hash Algorithm) is a family of cryptographic hash functions
 <summary>D. DES</summary>
 Incorrect. DES (Data Encryption Standard) is a symmetric encryption algorithm, not a hashing algorithm.
 </details>
+
 
 21. Which term describes unauthorized access to data, applications, services, or networks?
 <details>
@@ -381,6 +401,7 @@ Incorrect. Phishing is a specific type of attack method, not the outcome of unau
 Incorrect. An exploit is a piece of code or technique used to take advantage of a vulnerability, which may lead to a breach.
 </details>
 
+
 22. Which security concept ensures that data is not altered or tampered with?
 <details>
 <summary>A. Integrity</summary>
@@ -398,6 +419,7 @@ Incorrect. Confidentiality ensures that sensitive information is not disclosed t
 <summary>D. Availability</summary>
 Incorrect. Availability ensures that systems and data are accessible to authorized users when needed.
 </details>
+
 
 23. Identify two key components of risk management in cybersecurity.
 <details>
@@ -417,6 +439,7 @@ Correct. Risk assessment is the process of identifying, analyzing, and evaluatin
 Incorrect. Installing antivirus software is a specific example of a risk mitigation technique, not a high-level component of the overall risk management process.
 </details>
 
+
 24. Which type of security testing involves testers having no prior knowledge of the network infrastructure?
 <details>
 <summary>A. Grey box testing</summary>
@@ -434,6 +457,7 @@ Incorrect. In white box testing, testers have full knowledge of the system, incl
 <summary>D. Black box testing</summary>
 Correct. Black box testing simulates an attack from an external actor with no inside knowledge of the target system. Testers must discover vulnerabilities from the outside, just as a real attacker would.
 </details>
+
 
 25. Which security principle involves having more than one person required to perform a task?
 <details>
@@ -453,6 +477,7 @@ Correct. Dual control is a security principle that requires two individuals to b
 Incorrect. Separation of duties is a related but distinct concept where a single critical task is divided into multiple parts, and each part is performed by a different person. Dual control requires two people for the same task at the same time.
 </details>
 
+
 26. In a security context, what does 'AAA' stand for?
 <details>
 <summary>A. Authentication, Analysis, and Auditing</summary>
@@ -470,6 +495,7 @@ Incorrect. While these are all security concepts, they are not the correct expan
 <summary>D. Analysis, Authorization, and Access</summary>
 Incorrect. While these are all security concepts, they are not the correct expansion of the AAA acronym.
 </details>
+
 
 27. What is the main purpose of a VPN?
 <details>
@@ -489,6 +515,7 @@ Correct. A Virtual Private Network (VPN) creates a secure, encrypted tunnel over
 Incorrect. Using a VPN typically adds a small amount of overhead that can slightly decrease internet speed due to the encryption process. It does not increase speed.
 </details>
 
+
 28. Which two network devices are used for traffic management and segmentation?
 <details>
 <summary>A. Router</summary>
@@ -506,6 +533,7 @@ Correct. A switch operates at Layer 2 and creates separate collision domains for
 <summary>D. Hub</summary>
 Incorrect. A hub is a Layer 1 device that simply repeats all incoming traffic to all other ports. It cannot segment traffic and creates a single collision domain.
 </details>
+
 
 29. In cybersecurity, what does 'IAM' stand for?
 <details>
@@ -525,6 +553,7 @@ Incorrect. This is not a standard cybersecurity term.
 Incorrect. This is not a standard cybersecurity term.
 </details>
 
+
 30. What is the primary purpose of data classification in an organization?
 <details>
 <summary>A. Protecting sensitive information</summary>
@@ -542,6 +571,7 @@ Incorrect. While data classification supports overall security, its direct purpo
 <summary>D. Organizing files by type</summary>
 Incorrect. Data classification is based on sensitivity and business impact, not simply the file type (e.g., .pdf, .docx).
 </details>
+
 
 31. In network security, what does a WAF protect against?
 <details>
@@ -561,6 +591,7 @@ Incorrect. Wireless Access Points (WAPs) and related protocols handle wireless s
 Correct. A WAF (Web Application Firewall) is specifically designed to protect web applications by filtering and monitoring HTTP traffic between a web application and the Internet, guarding against attacks like SQL injection and cross-site scripting (XSS).
 </details>
 
+
 32. What type of attack involves intercepting legitimate communication and forging a fictitious response to the sender?
 <details>
 <summary>A. Man-in-the-middle attack</summary>
@@ -578,6 +609,7 @@ Incorrect. A denial of service (DOS) attack overwhelms resources to make a servi
 <summary>D. SQL injection attack</summary>
 Incorrect. A SQL injection attack injects malicious SQL commands into a database query.
 </details>
+
 
 33. In which type of attack does the attacker disguise as a trusted entity to steal sensitive information?
 <details>
@@ -597,6 +629,7 @@ Correct. Phishing is a social engineering attack where an attacker sends fraudul
 Incorrect. A MitM attack involves intercepting communication, not necessarily disguising oneself to trick a user into handing over information.
 </details>
 
+
 34. Which malware type is specifically designed to take advantage of a known vulnerability?
 <details>
 <summary>A. Exploit</summary>
@@ -614,6 +647,7 @@ Incorrect. A Trojan is malware disguised as legitimate software. It relies on tr
 <summary>D. Virus</summary>
 Incorrect. A virus is a type of malware that attaches itself to another program and spreads when that program is executed.
 </details>
+
 
 35. Choose two types of malware that typically require user interaction to activate.
 <details>
@@ -633,6 +667,7 @@ Incorrect. A rootkit is designed to gain and maintain privileged control over a 
 Incorrect. A worm is specifically designed to spread across networks without needing user interaction, often by exploiting software vulnerabilities automatically.
 </details>
 
+
 36. Which type of security control is a security awareness training?
 <details>
 <summary>A. Physical</summary>
@@ -650,6 +685,7 @@ Incorrect. Legal is not a standard category of security control. It would fall u
 <summary>D. Administrative</summary>
 Correct. Administrative (or managerial) controls are security measures that focus on policies, procedures, and training. Security awareness training is a prime example of an administrative control.
 </details>
+
 
 37. Which term describes a flaw or weakness in a system's design or implementation that could be exploited?
 <details>
@@ -669,6 +705,7 @@ Correct. A vulnerability is a weakness or flaw in a system, process, or control 
 Incorrect. Risk is the intersection of a threat and a vulnerability (Risk = Threat x Vulnerability). It is the potential for loss or damage when a threat exploits a vulnerability.
 </details>
 
+
 38. What is a honeypot primarily used for in network security?
 <details>
 <summary>A. Managing user access</summary>
@@ -687,6 +724,7 @@ Incorrect. Encryption protocols and algorithms are used for encrypting data.
 Correct. A honeypot is a decoy system set up to be an attractive target for attackers. Its purpose is to lure them in so that their attack methods and tools can be monitored and analyzed in a safe environment.
 </details>
 
+
 39. In cybersecurity, what is the principle of least privilege?
 <details>
 <summary>A. Providing users with only the access necessary to perform their jobs</summary>
@@ -704,6 +742,7 @@ Incorrect. This describes multifactor authentication (MFA), not the principle of
 <summary>D. Separating user data from application data</summary>
 Incorrect. This describes data segregation, which is a good security practice but is not the principle of least privilege.
 </details>
+
 
 40. Which protocol is used for securely accessing remote servers?
 <details>
