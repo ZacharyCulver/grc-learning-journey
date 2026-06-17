@@ -3,7 +3,7 @@
 
 ---
 
-1. In which type of cloud computing model does the customer have the least control over the infrastructure?
+**1. In which type of cloud computing model does the customer have the least control over the infrastructure?**
 <details>
 <summary>A. Software as a Service (SaaS)</summary>
 Correct. In a SaaS model, the provider manages the entire infrastructure and software. The customer only has access to the application itself, offering them the least amount of control.
@@ -22,7 +22,7 @@ Incorrect. IaaS provides customers with the most control over the operating syst
 </details>
 
 
-2. Which type of encryption is used for securing data in transit?
+**2. Which type of encryption is used for securing data in transit?**
 <details>
 <summary>A. Symmetric encryption</summary>
 Incorrect. Symmetric encryption uses the same key for both encryption and decryption and is often used for data at rest, though it can be part of a hybrid system for data in transit. Asymmetric encryption is primarily used to establish the secure channel.
@@ -41,7 +41,7 @@ Incorrect. Hashing is a one-way function used to verify data integrity, not to e
 </details>
 
 
-3. Which protocol is essential for secure web browsing?
+**3. Which protocol is essential for secure web browsing?**
 <details>
 <summary>A. FTP</summary>
 Incorrect. FTP (File Transfer Protocol) is used for transferring files but is inherently insecure as it transmits data in cleartext.
@@ -60,7 +60,7 @@ Correct. HTTPS (Hypertext Transfer Protocol Secure) encrypts the communication b
 </details>
 
 
-4. What is the primary purpose of a digital certificate?
+**4. What is the primary purpose of a digital certificate?**
 <details>
 <summary>A. User authentication</summary>
 Incorrect. While digital certificates can be used for user authentication, their primary purpose is to validate the ownership of a public key.
@@ -79,7 +79,7 @@ Incorrect. While certificates can be used in the authentication process for some
 </details>
 
 
-5. Which technology is essential for building a secure network perimeter?
+**5. Which technology is essential for building a secure network perimeter?**
 <details>
 <summary>A. VLAN</summary>
 Incorrect. VLANs (Virtual Local Area Networks) are used for segmenting a network internally, not for securing the perimeter.
@@ -98,7 +98,7 @@ Correct. A firewall is a fundamental network security device that monitors and c
 </details>
 
 
-6. Which type of firewall inspects the state of active connections?
+**6. Which type of firewall inspects the state of active connections?**
 <details>
 <summary>A. Stateful firewall</summary>
 Correct. A stateful firewall monitors the state of active connections and uses this context to make decisions about which network packets to allow or block.
@@ -117,7 +117,7 @@ Incorrect. A packet-filtering firewall is a stateless firewall that inspects pac
 </details>
 
 
-7. What is the main function of a SIEM system?
+**7. What is the main function of a SIEM system?**
 <details>
 <summary>A. Security information and event management</summary>
 Correct. SIEM stands for Security Information and Event Management. Its main function is to collect, correlate, and analyze security data from various sources to detect threats and manage incidents.
@@ -136,7 +136,7 @@ Incorrect. Data Loss Prevention (DLP) tools are specifically focused on preventi
 </details>
 
 
-8. Which two factors contribute to a strong security posture?
+**8. Which two factors contribute to a strong security posture?**
 <details>
 <summary>A. Regular security audits</summary>
 Correct. Audits systematically evaluate an organization's security controls and practices, helping to identify weaknesses and ensure compliance, which strengthens security posture.
@@ -155,7 +155,7 @@ Incorrect. While SSO can improve user experience and centralize authentication m
 </details>
 
 
-9. Which type of attack involves bombarding a DNS server with traffic to overwhelm it?
+**9. Which type of attack involves bombarding a DNS server with traffic to overwhelm it?**
 <details>
 <summary>A. DNS poisoning</summary>
 Incorrect. DNS poisoning (or cache spoofing) involves corrupting a DNS cache to redirect users to malicious sites.
@@ -174,7 +174,7 @@ Correct. A DNS amplification attack is a type of Distributed Denial of Service (
 </details>
 
 
-10. Which cryptographic algorithm is commonly used for secure wireless communication?
+**10. Which cryptographic algorithm is commonly used for secure wireless communication?**
 <details>
 <summary>A. AES</summary>
 Correct. AES (Advanced Encryption Standard) is the encryption standard used in the WPA2 and WPA3 security protocols to protect wireless network traffic.
@@ -193,7 +193,7 @@ Incorrect. RSA is an asymmetric algorithm often used for key exchange or digital
 </details>
 
 
-11. Which attack involves overwhelming a system with traffic to make it unavailable?
+**11. Which attack involves overwhelming a system with traffic to make it unavailable?**
 <details>
 <summary>A. Phishing attack</summary>
 Incorrect. A phishing attack is a form of social engineering used to deceive users into revealing sensitive information.
@@ -212,7 +212,7 @@ Incorrect. A Man-in-the-middle (MitM) attack involves an attacker secretly inter
 </details>
 
 
-12. Identify two common methods used in multifactor authentication.
+**12. Identify two common methods used in multifactor authentication.**
 <details>
 <summary>A. Security tokens</summary>
 Correct. A security token (something you have), which can be a hardware device or a software application that generates a one-time code, is a common MFA factor.
@@ -231,7 +231,7 @@ Incorrect. A username is an identifier, not an authentication factor.
 </details>
 
 
-13. What is the main goal of an incident response plan?
+**13. What is the main goal of an incident response plan?**
 <details>
 <summary>A. Preventing security incidents</summary>
 Incorrect. While prevention is a goal of overall security, an incident response plan specifically deals with what to do *after* an incident has occurred.
@@ -250,7 +250,7 @@ Correct. The primary goal of an incident response plan is to provide a structure
 </details>
 
 
-14. Identify two characteristics of a DDoS attack.
+**14. Identify two characteristics of a DDoS attack.**
 <details>
 <summary>A. Overwhelms a target's resources</summary>
 Correct. The primary goal of any Denial of Service attack, including a DDoS attack, is to exhaust the resources (like bandwidth, CPU, or memory) of the target system.
@@ -269,7 +269,7 @@ Incorrect. A DDoS attack typically focuses its combined traffic on a single targ
 </details>
 
 
-15. Select two protocols commonly used for securing email communication.
+**15. Select two protocols commonly used for securing email communication.**
 <details>
 <summary>A. S/MIME</summary>
 Correct. S/MIME (Secure/Multipurpose Internet Mail Extensions) is a standard for public key encryption and signing of email encapsulated in MIME.
@@ -288,7 +288,7 @@ Correct. PGP (Pretty Good Privacy) is an encryption program that provides crypto
 </details>
 
 
-16. Select two primary goals of a security awareness training program.
+**16. Select two primary goals of a security awareness training program.**
 <details>
 <summary>A. Educate employees about security policies</summary>
 Correct. A key goal of security awareness training is to ensure all employees understand the organization's security policies and their role in upholding them.
@@ -307,7 +307,7 @@ Correct. One of the most important goals of security awareness training is to te
 </details>
 
 
-17. What does PKI stand for in network security?
+**17. What does PKI stand for in network security?**
 <details>
 <summary>A. Public Key Infrastructure</summary>
 Correct. PKI is a framework of hardware, software, policies, and procedures needed to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption.
@@ -326,7 +326,7 @@ Incorrect. This is not a standard cybersecurity term.
 </details>
 
 
-18. What is the primary function of RAID technology?
+**18. What is the primary function of RAID technology?**
 <details>
 <summary>A. Provide data encryption</summary>
 Incorrect. RAID does not inherently provide data encryption. Encryption must be implemented separately.
@@ -345,7 +345,7 @@ Correct. RAID (Redundant Array of Independent Disks) combines multiple physical 
 </details>
 
 
-19. Which two are essential components of a security incident response plan?
+**19. Which two are essential components of a security incident response plan?**
 <details>
 <summary>A. Incident identification</summary>
 Correct. A core part of any incident response plan is the process for detecting and validating that a security incident has occurred.
@@ -364,7 +364,7 @@ Incorrect. Data encryption is a security control to protect data, not a componen
 </details>
 
 
-20. Select two common cryptographic algorithms used in hashing.
+**20. Select two common cryptographic algorithms used in hashing.**
 <details>
 <summary>A. MD5</summary>
 Correct. MD5 (Message Digest 5) is a widely known hashing algorithm, though it is now considered insecure for cryptographic purposes due to vulnerabilities.
@@ -383,7 +383,7 @@ Incorrect. DES (Data Encryption Standard) is a symmetric encryption algorithm, n
 </details>
 
 
-21. Which term describes unauthorized access to data, applications, services, or networks?
+**21. Which term describes unauthorized access to data, applications, services, or networks?**
 <details>
 <summary>A. Attack</summary>
 Incorrect. An attack is the action or attempt to gain unauthorized access; a breach is the successful result of that attack.
@@ -402,7 +402,7 @@ Incorrect. An exploit is a piece of code or technique used to take advantage of 
 </details>
 
 
-22. Which security concept ensures that data is not altered or tampered with?
+**22. Which security concept ensures that data is not altered or tampered with?**
 <details>
 <summary>A. Integrity</summary>
 Correct. Integrity is one of the core principles of the CIA triad (Confidentiality, Integrity, Availability) and refers to maintaining the consistency, accuracy, and trustworthiness of data.
@@ -421,7 +421,7 @@ Incorrect. Availability ensures that systems and data are accessible to authoriz
 </details>
 
 
-23. Identify two key components of risk management in cybersecurity.
+**23. Identify two key components of risk management in cybersecurity.**
 <details>
 <summary>A. Risk mitigation</summary>
 Correct. Risk mitigation involves implementing controls and countermeasures to reduce the likelihood or impact of identified risks.
@@ -440,7 +440,7 @@ Incorrect. Installing antivirus software is a specific example of a risk mitigat
 </details>
 
 
-24. Which type of security testing involves testers having no prior knowledge of the network infrastructure?
+**24. Which type of security testing involves testers having no prior knowledge of the network infrastructure?**
 <details>
 <summary>A. Grey box testing</summary>
 Incorrect. In grey box testing, testers have partial knowledge of the system, such as user-level credentials or network diagrams.
@@ -459,7 +459,7 @@ Correct. Black box testing simulates an attack from an external actor with no in
 </details>
 
 
-25. Which security principle involves having more than one person required to perform a task?
+**25. Which security principle involves having more than one person required to perform a task?**
 <details>
 <summary>A. Least privilege</summary>
 Incorrect. The principle of least privilege dictates that users should only be given the minimum level of access required to perform their job functions.
@@ -478,7 +478,7 @@ Incorrect. Separation of duties is a related but distinct concept where a single
 </details>
 
 
-26. In a security context, what does 'AAA' stand for?
+**26. In a security context, what does 'AAA' stand for?**
 <details>
 <summary>A. Authentication, Analysis, and Auditing</summary>
 Incorrect. While these are all security concepts, they are not the correct expansion of the AAA acronym.
@@ -497,7 +497,7 @@ Incorrect. While these are all security concepts, they are not the correct expan
 </details>
 
 
-27. What is the main purpose of a VPN?
+**27. What is the main purpose of a VPN?**
 <details>
 <summary>A. Filter web content</summary>
 Incorrect. While some VPN services offer content filtering, the primary purpose of the underlying technology is to encrypt traffic.
@@ -516,7 +516,7 @@ Incorrect. Using a VPN typically adds a small amount of overhead that can slight
 </details>
 
 
-28. Which two network devices are used for traffic management and segmentation?
+**28. Which two network devices are used for traffic management and segmentation?**
 <details>
 <summary>A. Router</summary>
 Correct. A router operates at Layer 3 and is used to connect different networks and make decisions on how to forward traffic between them, effectively segmenting them.
@@ -535,7 +535,7 @@ Incorrect. A hub is a Layer 1 device that simply repeats all incoming traffic to
 </details>
 
 
-29. In cybersecurity, what does 'IAM' stand for?
+**29. In cybersecurity, what does 'IAM' stand for?**
 <details>
 <summary>A. Internet Application Mode</summary>
 Incorrect. This is not a standard cybersecurity term.
@@ -554,7 +554,7 @@ Incorrect. This is not a standard cybersecurity term.
 </details>
 
 
-30. What is the primary purpose of data classification in an organization?
+**30. What is the primary purpose of data classification in an organization?**
 <details>
 <summary>A. Protecting sensitive information</summary>
 Correct. Data classification is the process of categorizing data based on its sensitivity (e.g., Public, Internal, Confidential). This allows an organization to apply the appropriate level of security controls to protect sensitive information.
@@ -573,7 +573,7 @@ Incorrect. Data classification is based on sensitivity and business impact, not 
 </details>
 
 
-31. In network security, what does a WAF protect against?
+**31. In network security, what does a WAF protect against?**
 <details>
 <summary>A. Windows authentication</summary>
 Incorrect. A WAF is not related to Windows authentication mechanisms.
@@ -592,7 +592,7 @@ Correct. A WAF (Web Application Firewall) is specifically designed to protect we
 </details>
 
 
-32. What type of attack involves intercepting legitimate communication and forging a fictitious response to the sender?
+**32. What type of attack involves intercepting legitimate communication and forging a fictitious response to the sender?**
 <details>
 <summary>A. Man-in-the-middle attack</summary>
 Correct. A Man-in-the-middle (MitM) attack places the attacker between two communicating parties. The attacker intercepts traffic and can alter, relay, or forge responses while both sides believe they're communicating directly with each other.
@@ -611,7 +611,7 @@ Incorrect. A SQL injection attack injects malicious SQL commands into a database
 </details>
 
 
-33. In which type of attack does the attacker disguise as a trusted entity to steal sensitive information?
+**33. In which type of attack does the attacker disguise as a trusted entity to steal sensitive information?**
 <details>
 <summary>A. SQL injection attack</summary>
 Incorrect. A SQL injection attack targets a database through a vulnerable application.
@@ -630,7 +630,7 @@ Incorrect. A MitM attack involves intercepting communication, not necessarily di
 </details>
 
 
-34. Which malware type is specifically designed to take advantage of a known vulnerability?
+**34. Which malware type is specifically designed to take advantage of a known vulnerability?**
 <details>
 <summary>A. Exploit</summary>
 Correct. An exploit is a piece of code, a sequence of commands, or a set of data that takes advantage of a bug, flaw, or vulnerability in a software application or system to cause unintended or unanticipated behavior.
@@ -649,7 +649,7 @@ Incorrect. A virus is a type of malware that attaches itself to another program 
 </details>
 
 
-35. Choose two types of malware that typically require user interaction to activate.
+**35. Choose two types of malware that typically require user interaction to activate.**
 <details>
 <summary>A. Trojan</summary>
 Correct. A Trojan horse disguises itself as legitimate software and relies on a user to execute it, thereby activating the malware.
@@ -668,7 +668,7 @@ Incorrect. A worm is specifically designed to spread across networks without nee
 </details>
 
 
-36. Which type of security control is a security awareness training?
+**36. Which type of security control is a security awareness training?**
 <details>
 <summary>A. Physical</summary>
 Incorrect. Physical controls are items like locks, fences, and security guards that deter physical access.
@@ -687,7 +687,7 @@ Correct. Administrative (or managerial) controls are security measures that focu
 </details>
 
 
-37. Which term describes a flaw or weakness in a system's design or implementation that could be exploited?
+**37. Which term describes a flaw or weakness in a system's design or implementation that could be exploited?**
 <details>
 <summary>A. Exploit</summary>
 Incorrect. An exploit is the tool or technique used to take advantage of a vulnerability.
@@ -706,7 +706,7 @@ Incorrect. Risk is the intersection of a threat and a vulnerability (Risk = Thre
 </details>
 
 
-38. What is a honeypot primarily used for in network security?
+**38. What is a honeypot primarily used for in network security?**
 <details>
 <summary>A. Managing user access</summary>
 Incorrect. Identity and Access Management (IAM) systems are used for managing user access.
@@ -725,7 +725,7 @@ Correct. A honeypot is a decoy system set up to be an attractive target for atta
 </details>
 
 
-39. In cybersecurity, what is the principle of least privilege?
+**39. In cybersecurity, what is the principle of least privilege?**
 <details>
 <summary>A. Providing users with only the access necessary to perform their jobs</summary>
 Correct. The principle of least privilege is a fundamental security concept that dictates a user or process should only have the minimum set of permissions, rights, or access required to perform their specific task.
@@ -744,7 +744,7 @@ Incorrect. This describes data segregation, which is a good security practice bu
 </details>
 
 
-40. Which protocol is used for securely accessing remote servers?
+**40. Which protocol is used for securely accessing remote servers?**
 <details>
 <summary>A. SNMP</summary>
 Incorrect. SNMP (Simple Network Management Protocol) is used for managing and monitoring network devices, not for secure remote access sessions.
