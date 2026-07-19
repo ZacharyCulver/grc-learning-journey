@@ -6,7 +6,7 @@
 - A security control is any safeguard or measure that reduces risk to assets.
 - Think of it like defenses in a castle: walls, guards, moats, alarms -- all are controls protecting valuables.
 
-**Categories of Controls**
+**Categories of Controls (by implementation type)**
 1. Technical (Logical)
    - Technology-based controls.
    - Examples:
@@ -37,31 +37,69 @@
    - _Prevents_ an incident before it happens.
    - Examples:
       - Firewalls blocking unauthorized traffic
-      - 
+      - Password policies requiring strong passwords
+      - Locked doors
 
+2. Detective
+   - _Detects_ an incident as it happens or afterward.
+   - Examples:
+      - Security alarms
+      - Intrusion Detection Systems (IDS)
+      - Audit logs
 
-## CIA Triad
+3. Corrective
+   - _Fixes_ the damage after an incident.
+   - Examples:
+      - Backup restoration after ransomware attack
+      - Antivirus removing malware
+      - Patching a vulnerability after a breach
+    
+4. Deterrent
+   - _Discourages_ attacks by increasing perceived risk.
+   - Examples:
+      - Warning signs ("This area under surveillance")
+      - Visible security guards
+    
+5. Compensating
+   - _Alternative_ controls when the primary control isn't feasible.
+   - Examples:
+      - If you can't encrypt an old system's hard drive, use strict physical security (locked room) instead
+      - Multi-factor authentication (MFA) when full role-based access controls are not feasible by the organization
+    
+6. Directive
+   - _Directs_ people toward correct actions
+   - Examples:
+      - Signs ("No Tailgating")
+      - Security awareness training
 
-### Confidentiality
-Protecting information from unauthorized disclosure.
+---
 
-Examples:
-- Encryption
-- Access controls
-- Need-to-know
+## *1.2 Core Security Principles* 
 
-### Integrity
-Ensuring data remains accurate and unaltered.
+### CIA Triad
+The three fundamental goals of cybersecurity:
 
-Examples:
-- Hashing
-- Digital signatures
-- File integrity monitoring
+#### Confidentiality
+- Ensuring only authorized people can access information.
+- Techniques: encryption, access controls, authentication.
+- Example: Encrypting sensitive email to prevent eavesdropping.
 
-### Availability
-Ensuring systems and data are accessible when needed.
+#### Integrity
+- Ensuring data remains accurate and unaltered.
+- Techniques: hashing, digital signatures, file permissions.
+- Example: A checksum on a downloaded file verifies it wasn't tampered with.
 
-Examples:
-- Backups
-- Redundancy
-- Load balancing
+#### Availability
+- Ensuring systems and data are accessible when needed.
+- Techniques: redundant systems, DDoS protection, backups.
+- Example: A redundant pwoer supply keeps a server online during power failures.
+
+---
+
+## Non-Repudiation
+- Guarantee that a sender cannot deny having sent a message and the recipient cannot deny having received it.
+- Techniques: Digital signatures (proving identity and integrity), logging systems
+- Example: An email digitally signed with a private key ensures proof of origin.
+
+---
+
