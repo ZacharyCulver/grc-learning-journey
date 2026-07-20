@@ -76,30 +76,80 @@
 
 ## *1.2 Core Security Principles* 
 
-### CIA Triad
+**CIA Triad**
 The three fundamental goals of cybersecurity:
 
-#### Confidentiality
+**Confidentiality**
 - Ensuring only authorized people can access information.
 - Techniques: encryption, access controls, authentication.
 - Example: Encrypting sensitive email to prevent eavesdropping.
 
-#### Integrity
+**Integrity**
 - Ensuring data remains accurate and unaltered.
 - Techniques: hashing, digital signatures, file permissions.
 - Example: A checksum on a downloaded file verifies it wasn't tampered with.
 
-#### Availability
+**Availability**
 - Ensuring systems and data are accessible when needed.
 - Techniques: redundant systems, DDoS protection, backups.
 - Example: A redundant pwoer supply keeps a server online during power failures.
 
 ---
 
-## Non-Repudiation
+**Non-Repudiation**
 - Guarantee that a sender cannot deny having sent a message and the recipient cannot deny having received it.
 - Techniques: Digital signatures (proving identity and integrity), logging systems
 - Example: An email digitally signed with a private key ensures proof of origin.
 
 ---
 
+## *1.3 AAA - Authentication, Authorization, Accounting*
+
+**Authentication**
+Proving who you are. Examples:
+- username + password
+- Biometrics (fingerprint, face)
+- Smartcards
+- OTP (one-time password) apps
+
+MFA (Multi-Factor Authentication) uses two or more different types:
+- Something you know (password)
+- Something you have (smartcard)
+- Something you are (fingerprint)
+
+**Authorization**
+Defining what you can do once authenticated.
+- Permissions, rights, access levels
+Example: A user may authenticate into a network but be authorized only to access their own files.
+
+**Accounting**
+Tracking actions.
+- Logging user activies
+- Monitoring access attempts
+- Reviewing logs
+Example: Audit logs showing who logged into the database and when.
+
+**Think:**
+Authentication -- "Who are you?"
+Authorization -- "What can you do?"
+Accounting -- "What _did_ you do?"
+
+---
+
+## *1.4 Security Posture Assessment*
+
+**Gap Analysis**
+- Compare current security posture against desired/best practices.
+- Find "gaps" (weaknesses).
+- Leads to action plans to fix gaps.
+
+**Zero Trust Architecture**
+- Principle: Never trust, always verify.
+- No implicit trust inside or outside the network.
+- Every access request must be authenticated, authorized, and encrypted.
+
+---
+
+## *1.5 Physical Security and Safety*
+
+Physical Controls:
