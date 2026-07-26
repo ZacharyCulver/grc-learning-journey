@@ -152,4 +152,52 @@ Accounting -- "What _did_ you do?"
 
 ## *1.5 Physical Security and Safety*
 
-Physical Controls:
+**Physical Controls:**
+- Fences
+- Locked doors
+- Biometrics (finterprint/face access)
+- Mantraps (two doors; traps intruders)
+- Bollards (posts preventing vehicle access)
+- Surveillance cameras (CCTV)
+- Alarm systems
+- Access badges
+
+**Environmental Controls:**
+- HVAC systems (cool servers)
+- Fire suppression (gas-based systems for server rooms)
+- Water detection sensors
+- Temperature/humidity monitors
+
+* Remember that protecting people, facilities, and equipment is as important as protecting data!
+
+---
+
+## *1.6 Deception and Disruption Techniques*
+
+**Honeypots and Honeynets**
+- Honeypot: A fake system/device to lure attackers.
+- Honeynet: A fake network of multiple honeypots.
+- Honeyfiles: Fake sensitive files (like "passwords.txt") to detect unauthorized access.
+
+Goal:
+- Detects attackers
+- Study attack methods
+- Waste attacker time
+
+Honeypots = detection + research tools, <u>NOT</u> real asset protection.
+
+---
+
+## *1.7 Change Management*
+
+**Why Change Management?**
+Goal: Prevent security incidents caused by careless/uncontrolled changes.
+
+**Change Control Process Steps**
+1. Request change.
+2. Analyze impact (risk assessment).
+3. Get approvals.
+4. Test in safe environment.
+5. Schedule deployment (usually during low-usage windows).
+6. Deploy with rollback plans ready.
+7. Document everything.
