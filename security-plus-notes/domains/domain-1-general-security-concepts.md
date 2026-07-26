@@ -77,7 +77,7 @@
 ## *1.2 Core Security Principles* 
 
 **CIA Triad**
-The three fundamental goals of cybersecurity:
+- The three fundamental goals of cybersecurity:
 
 **Confidentiality**
 - Ensuring only authorized people can access information.
@@ -106,11 +106,11 @@ The three fundamental goals of cybersecurity:
 ## *1.3 AAA - Authentication, Authorization, Accounting*
 
 **Authentication**
-Proving who you are. Examples:
-- username + password
-- Biometrics (fingerprint, face)
-- Smartcards
-- OTP (one-time password) apps
+- Proving who you are. Examples:
+   - username + password
+   - Biometrics (fingerprint, face)
+   - Smartcards
+   - OTP (one-time password) apps
 
 MFA (Multi-Factor Authentication) uses two or more different types:
 - Something you know (password)
@@ -118,21 +118,21 @@ MFA (Multi-Factor Authentication) uses two or more different types:
 - Something you are (fingerprint)
 
 **Authorization**
-Defining what you can do once authenticated.
+- Defining what you can do once authenticated.
 - Permissions, rights, access levels
-Example: A user may authenticate into a network but be authorized only to access their own files.
+- Example: A user may authenticate into a network but be authorized only to access their own files.
 
 **Accounting**
-Tracking actions.
-- Logging user activies
-- Monitoring access attempts
-- Reviewing logs
-Example: Audit logs showing who logged into the database and when.
+- Tracking actions.
+   - Logging user activies
+   - Monitoring access attempts
+   - Reviewing logs
+- Example: Audit logs showing who logged into the database and when.
 
 **Think:**
-Authentication -- "Who are you?"
-Authorization -- "What can you do?"
-Accounting -- "What _did_ you do?"
+* Authentication -- "Who are you?"
+* Authorization -- "What can you do?"
+* Accounting -- "What _did_ you do?"
 
 ---
 
@@ -168,7 +168,7 @@ Accounting -- "What _did_ you do?"
 - Water detection sensors
 - Temperature/humidity monitors
 
-* Remember that protecting people, facilities, and equipment is as important as protecting data!
+**Remember that protecting people, facilities, and equipment is as important as protecting data!**
 
 ---
 
@@ -201,3 +201,62 @@ Goal: Prevent security incidents caused by careless/uncontrolled changes.
 5. Schedule deployment (usually during low-usage windows).
 6. Deploy with rollback plans ready.
 7. Document everything.
+
+Real-world example:
+A firewall rule change accidentally opens a vulnerable port.
+Proper change management would catch this during risk analysis & testing.
+
+---
+
+## *1.8 Basic Cryptographic Solutions*
+
+**Encryption**
+- Scrambles data so unauthorized people can't read it.
+
+Two types:
+
+1. Symmetric encryption:
+   - Same key used to encrypt and decrypt.
+   - Examples: AES, DES
+  
+2. Asymmetric encryption:
+   - Two keys: public and private.
+   - Examples: RSA, ECC.
+  
+**Public Key Infrastructure (PKI)**
+
+Key concepts:
+   - Certificates (prove identity)
+   - Certificates Authorities (trusted issuers)
+   - Certificate Revocation (CRL, OSCP)
+
+**Hashing**
+   - One way function to create a unique fingerprint of data.
+   - Used for integrity checks.
+   - Examples: SHA-256, SHA-3.
+
+**Digital Signatures**
+   - Use asymmetric encryption + hashing.
+   - They prove:
+      - Data integrity
+      - Sender authenticity
+      - Non-repudiation
+    
+**Blockchain basics**
+   - A decentralized ledger
+   - Uses hashing and chaining of blocks
+   - Common in cryptocurrency, but useful for tamper-evident systems
+
+---
+
+## *Domain 1 Summary*
+
+- Categories of security controls (technical/logical, admin/managerial, physical)
+- Functional types of controls (preventive, detective, corrective, deterrent, compensating, directive)
+- CIA triad + non-repudiation
+- AAA (authentication, authorization, accounting)
+- Zero trust principles
+- Physical and environmental security measures
+- Honeypots, honeynets, honeyfiles
+- Change management process
+- Basic cryptography concepts (symmetric/asymmetric encryption, PKI, hashing, digital signatures)
