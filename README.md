@@ -23,6 +23,7 @@ Expected retirement: May 2027
 
 - CompTIA Security+
 - ISC2 CGRC
+- Microsoft SC-900: Secruity, Compliance, and Identity Fundamentals
 
 ## Portfolio Goals
 
