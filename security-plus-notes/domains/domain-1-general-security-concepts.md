@@ -1,4 +1,7 @@
 # Domain 1 - General Security Concepts
+**Goal of Domain 1:**
+Understand core security principles, security controls, risk management basics, cryptography fundamentals, and physical security.
+This domain sets the foundation for everything else in cybersecurity.
 
 ## *1.1 Security Control Types and Categories* 
 
