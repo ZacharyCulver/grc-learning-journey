@@ -31,6 +31,48 @@ Key elements include:
 - Leadership oversight
 - Performance measurement and reporting
 
+### Governance Principles
+
+Governance is the framework of policies, processes, and rules used to direct, control, and hold an organization accountable.
+
+#### Governance Objectives
+
+- Establish organizational goals and strategic direction.
+- Support transparent, accountable, and effective decisions.
+- Balance the interests of internal and external stakeholders.
+- Translate high-level objectives into lower-level guidance.
+- Ensure consistent decision-making across the organization.
+
+#### Governance Levels
+
+Governance begins with senior leadership but operates hierarchically:
+
+1. Enterprise governance
+2. Information security and privacy governance
+3. Business-unit or departmental governance
+4. System- and process-level implementation
+
+#### Governance Approaches
+
+- **Centralized:** A central authority makes governance decisions, improving consistency.
+- **Decentralized:** Authority is delegated to departments, improving flexibility but risking inconsistency.
+- **Hybrid:** Central leadership establishes core requirements while delegating selected decisions.
+
+#### Governance Outputs
+
+Governance decisions are communicated through:
+
+- Policies
+- Standards
+- Procedures
+- Guidelines
+- Roles and responsibilities
+- Awareness and training
+
+**Key distinction:** Governance determines organizational direction and expectations; management implements them through programs, processes, and controls.
+
+---
+
 ### Risk Management
 
 Risk management identifies, evaluates, responds to, and monitors uncertainty that could affect organizational objectives.
