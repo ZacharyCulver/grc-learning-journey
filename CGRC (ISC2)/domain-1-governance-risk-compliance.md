@@ -687,7 +687,128 @@ Controls must be:
 
 ---
 
-## 8. Major Frameworks and Programs
+## 8. Frameworks, Standards, and Programs
+
+### Value of Frameworks
+
+A GRC framework provides a structured and repeatable approach for establishing, implementing, maintaining, and improving governance, risk management, and compliance activities.
+
+The primary value of a framework is to provide **structure**.
+
+Without an established framework, an organization risks:
+
+- Leaving gaps in its security and privacy program.
+- Applying controls inconsistently.
+- Duplicating compliance efforts.
+- Assigning unclear responsibilities.
+- Failing to maintain controls over time.
+- Responding inconsistently to organizational or regulatory changes.
+
+#### Framework Selection
+
+Organizations should select frameworks based on their:
+
+- Business and mission objectives
+- Industry
+- Legal and regulatory obligations
+- Contractual requirements
+- Types of information processed
+- Risk environment
+- Organizational size and complexity
+- Customer expectations
+- Available personnel and resources
+
+A framework should support the organization’s needs rather than be adopted only because it is widely recognized.
+
+#### Framework Tailoring
+
+A selected framework may be customized or tailored to match the organization’s:
+
+- Risk appetite and risk tolerance
+- Operating environment
+- System architecture
+- Business processes
+- Legal obligations
+- Security and privacy requirements
+
+Tailoring should be:
+
+- Risk-based
+- Documented
+- Approved by appropriate stakeholders
+- Consistently applied
+- Reviewed when organizational conditions change
+
+Tailoring a framework does not mean ignoring mandatory legal, regulatory, or contractual requirements.
+
+#### Using Multiple Frameworks
+
+Frameworks are not necessarily mutually exclusive. Organizations may use multiple frameworks, standards, and control catalogs together.
+
+For example, an organization may:
+
+- Use the NIST Risk Management Framework to manage system risk.
+- Implement controls from NIST SP 800-53.
+- Use ISO/IEC 27001 to establish an information security management system.
+- Use COBIT to support enterprise governance of information and technology.
+- Apply additional requirements from FedRAMP, PCI DSS, or CMMC.
+
+Different frameworks often address similar GRC concepts but vary in:
+
+- Purpose
+- Scope
+- Terminology
+- Intended audience
+- Implementation method
+- Assessment requirements
+- Level of detail
+
+#### Framework and Control Mapping
+
+Organizations can map requirements and controls between different frameworks.
+
+Mapping can help:
+
+- Identify overlapping requirements.
+- Reduce duplicated implementation efforts.
+- Reuse common controls and evidence.
+- Identify gaps between frameworks.
+- Translate requirements for different stakeholders.
+- Maintain consistency across compliance programs.
+
+A mapping or crosswalk does not prove compliance. The organization must still confirm that each applicable requirement is fully addressed.
+
+#### Framework Maintenance
+
+Selecting a framework is not a one-time activity.
+
+Organizations should continuously:
+
+- Monitor whether framework elements remain effective.
+- Review changes to laws, standards, and threats.
+- Update policies, procedures, and controls.
+- Reassess organizational and system risks.
+- Identify gaps and inconsistent implementation.
+- Verify that the GRC program continues to support organizational objectives.
+
+#### Use of NIST Resources
+
+NIST publications are frequently used to explain GRC concepts because they are publicly available and provide detailed guidance, processes, and control catalogs.
+
+The use of NIST materials does not mean that NIST is always superior to ISO/IEC, COBIT, or other approaches.
+
+Organizations should select or combine frameworks based on their individual requirements and operating environments.
+
+#### Framework Key Takeaways
+
+- Frameworks provide structure, consistency, and repeatability.
+- Framework selection should reflect organizational needs and obligations.
+- Frameworks can be tailored when tailoring is risk-based and documented.
+- Multiple frameworks may be used together.
+- Similar controls can often be mapped between frameworks.
+- A control crosswalk does not automatically demonstrate compliance.
+- Framework elements must be maintained and updated over time.
+- NIST, ISO/IEC, and COBIT address related GRC concepts but differ in focus and implementation.
 
 ### NIST Risk Management Framework
 
