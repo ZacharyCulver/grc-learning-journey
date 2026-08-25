@@ -260,17 +260,215 @@ Technical weaknesses matter because of their potential effect on organizational 
 
 ### 1.3 Compliance
 
-Compliance means meeting applicable:
+Compliance is the act of adhering to established requirements, rules, or expectations.
+
+Compliance requirements may originate from:
 
 - Laws and regulations
-- Contractual requirements
+- Government agencies
 - Industry standards
+- Contractual obligations
+- Customer requirements
 - Organizational policies
-- Framework requirements
+- Voluntarily adopted frameworks and standards
 
-Compliance does not automatically equal security. An organization may meet a minimum requirement while still retaining significant risk.
+Identifying every applicable requirement can be complex, particularly when an organization operates across multiple industries or jurisdictions.
 
-> **Key distinction:** Compliance establishes obligations that must be satisfied, while risk management determines whether additional protections are necessary based on organizational risk.
+> **Key distinction:** Compliance establishes requirements that must be satisfied, while risk management evaluates uncertainty and determines whether additional protections are necessary.
+
+#### Sources of Compliance Requirements
+
+Compliance requirements can be either external or internal.
+
+##### External Compliance
+
+External compliance requirements are established by entities outside the organization.
+
+Sources may include:
+
+- Governments
+- Regulatory agencies
+- Industry bodies
+- Contracting organizations
+- Customers
+- Business partners
+- National or international standards organizations
+
+External requirements may apply based on:
+
+- Geographic location
+- Industry
+- Jurisdiction
+- Information type
+- Business activity
+- Contractual relationship
+- Customer base
+- Government relationship
+
+External compliance requirements may be mandatory. Failure to meet them can result in penalties or restrictions.
+
+Organizations operating across multiple jurisdictions may encounter:
+
+- Overlapping requirements
+- Conflicting requirements
+- Different reporting obligations
+- Different data-protection expectations
+- Different retention requirements
+- Increased administrative overhead
+
+Organizations must identify which requirements apply and determine how to satisfy them consistently.
+
+##### Internal Compliance
+
+Internal compliance requirements are established by the organization itself.
+
+They may originate from:
+
+- Organizational policies
+- Internal standards
+- Governance decisions
+- Enterprise risk decisions
+- Codes of conduct
+- Security baselines
+- Voluntarily adopted frameworks
+
+An organization may voluntarily adopt a framework or standard because it:
+
+- Supports organizational goals.
+- Improves consistency.
+- Demonstrates security maturity.
+- Builds customer confidence.
+- Supports contractual opportunities.
+- Provides a structured control baseline.
+
+Once adopted, a voluntary standard may become mandatory for employees, departments, systems, or business units within the organization.
+
+Internal compliance promotes:
+
+- Consistent operations
+- Coordinated decision-making
+- Standardized security practices
+- Clear accountability
+- Alignment between departments
+- Repeatable control implementation
+
+#### Managing Multiple Compliance Requirements
+
+Organizations are often subject to multiple requirements simultaneously.
+
+Effective compliance management includes:
+
+1. Identifying applicable requirements.
+2. Determining which systems, processes, and information are affected.
+3. Translating requirements into policies and controls.
+4. Assigning responsible owners.
+5. Collecting evidence of implementation.
+6. Assessing whether requirements are satisfied.
+7. Documenting gaps and remediation activities.
+8. Monitoring changes to obligations.
+9. Reporting compliance status to leadership.
+
+Organizations may use a **control crosswalk** to map similar requirements from multiple frameworks to a common set of controls.
+
+This can:
+
+- Reduce duplicated effort.
+- Identify overlapping requirements.
+- Reveal conflicts or gaps.
+- Support consistent control implementation.
+- Simplify evidence collection.
+- Improve audit readiness.
+
+#### Compliance Evidence
+
+Organizations must be able to demonstrate compliance through appropriate evidence.
+
+Examples include:
+
+- Policies and procedures
+- System configurations
+- Access-control records
+- Audit logs
+- Training records
+- Risk assessments
+- Assessment reports
+- Vulnerability scan results
+- Incident records
+- Contracts
+- Approval records
+- Remediation plans
+- Plans of Action and Milestones
+- Continuous monitoring reports
+
+Evidence should be:
+
+- Relevant
+- Accurate
+- Complete
+- Current
+- Traceable to a requirement
+- Protected against unauthorized modification
+
+Compliance is not established merely by having a policy. The organization should also demonstrate that required controls are implemented and operating as intended.
+
+#### Compliance Failures
+
+Failure to meet external or internal compliance requirements can significantly affect an organization.
+
+External compliance failures may result in:
+
+- Fines
+- Civil liability
+- Criminal liability
+- Contract loss
+- Loss of authorization to operate
+- Regulatory scrutiny
+- Operational restrictions
+- Reputational damage
+- Loss of customer trust
+
+Internal compliance failures may result in:
+
+- Inconsistent performance
+- Increased organizational risk
+- Control failures
+- Audit findings
+- Disciplinary action
+- Remediation costs
+- Poor coordination between business units
+- Failure to meet organizational objectives
+
+#### Compliance Function
+
+Many organizations maintain a dedicated compliance function responsible for coordinating compliance activities.
+
+Responsibilities may include:
+
+- Maintaining an inventory of applicable requirements.
+- Interpreting regulations and standards.
+- Mapping requirements to controls.
+- Assigning and tracking compliance responsibilities.
+- Coordinating assessments and audits.
+- Collecting and validating evidence.
+- Tracking findings and remediation.
+- Monitoring regulatory changes.
+- Reporting compliance status to leadership.
+- Coordinating with legal, privacy, security, risk, and internal audit personnel.
+
+The compliance function does not own every control. Control owners and business units remain responsible for implementing and maintaining their assigned controls.
+
+#### Compliance Key Takeaways
+
+- Compliance means adhering to established requirements.
+- Requirements may originate internally or externally.
+- External requirements may be based on jurisdiction, industry, contracts, or information type.
+- Voluntary standards can become mandatory once adopted by an organization.
+- Multiple requirements may overlap or conflict.
+- Control crosswalks help consolidate similar requirements.
+- Compliance must be supported by sufficient evidence.
+- A written policy alone does not prove that a control is operating effectively.
+- Compliance failures can create legal, financial, operational, and reputational consequences.
+- Compliance does not automatically eliminate risk or guarantee security.
 
 ---
 
