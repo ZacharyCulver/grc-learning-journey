@@ -1,5 +1,10 @@
 # Describe Identity Concepts
 
+> **Source:** Microsoft Learn — SC-900  
+> **Verified against current Microsoft Learn content:** October 8, 2026
+
+---
+
 ## Module Overview
 
 This module covers the fundamental concepts behind identity and access management.
