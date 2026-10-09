@@ -1,4 +1,3 @@
-# SC-900 — Section 1, Module 1
 # Describe Security and Compliance Concepts
 
 > **Source:** Microsoft Learn — SC-900  
