@@ -210,8 +210,6 @@ think:
 
 **OATH**
 
-This directly addresses one of the questions you missed on your initial practice assessment.
-
 ---
 
 # 5. Other Authentication Methods
