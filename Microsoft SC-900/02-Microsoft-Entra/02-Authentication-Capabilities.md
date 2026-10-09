@@ -1,7 +1,7 @@
 # Describe the Authentication Capabilities of Microsoft Entra ID
 
-> **Source:** Microsoft Learn — SC-900
-> **Module:** Describe the authentication capabilities of Microsoft Entra ID
+> **Source:** Microsoft Learn — SC-900  
+> **Module:** Describe the authentication capabilities of Microsoft Entra ID  
 > **Verified against current Microsoft Learn content:** October 8, 2026
 
 ---
