@@ -1,4 +1,3 @@
-# SC-900 — Section 1, Module 2
 # Describe Identity Concepts
 
 ## Module Overview
