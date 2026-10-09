@@ -1,18 +1,29 @@
+# SC-900 — Section 1, Module 1
 # Describe Security and Compliance Concepts
 
-## Module Overview
+> **Source:** Microsoft Learn — SC-900  
+> **Verified against current Microsoft Learn content:** October 8, 2026
 
-This module covers the foundational security and compliance concepts used throughout Microsoft security products.
+---
 
-The main topics are:
+# Module Overview
+
+This module covers foundational security and compliance concepts used throughout Microsoft security products and services.
+
+The current Microsoft Learn module focuses on:
 
 | Topic | Core Idea |
 |---|---|
-| Shared Responsibility | Who is responsible for security in the cloud |
-| Defense in Depth | Using multiple layers of security |
-| Zero Trust | Never trust automatically; always verify |
-| Encryption and Hashing | Protecting data and verifying integrity |
+| Shared Responsibility | Who is responsible for securing what |
+| Defense in Depth | Protect resources with multiple security layers |
+| CIA Triad | Confidentiality, Integrity, and Availability |
+| Zero Trust | Trust no one automatically; continuously verify |
+| Encryption | Protect data from unauthorized viewing |
+| Hashing | Verify data integrity and protect stored passwords |
 | GRC | Governance, Risk, and Compliance |
+| Data Residency | Where data is physically stored |
+| Data Sovereignty | Which country's laws apply to data |
+| Data Privacy | Appropriate handling of personal information |
 
 ---
 
@@ -20,102 +31,324 @@ The main topics are:
 
 ## Big Idea
 
-Moving to the cloud does **not** mean Microsoft becomes responsible for everything.
+Using cloud services does **not** mean Microsoft becomes responsible for all security.
 
-Security responsibilities are divided between:
+Security responsibility is divided between:
 
-**Microsoft — the cloud provider**
+**The cloud provider**
 
 and
 
-**The customer — the organization using the cloud**
+**The customer**
 
-The exact division depends on the type of cloud service being used.
+The exact split depends on the type of service being used.
 
 ---
+
+# On-Premises
+
+In a traditional on-premises environment, the organization manages and secures the entire technology stack.
+
+The organization is responsible for:
+
+- Buildings
+- Physical servers
+- Networking equipment
+- Operating systems
+- Applications
+- Identities
+- Access
+- Endpoints
+- Data
+
+### ELI5
+
+**On-premises = You own it, run it, and secure it.**
+
+---
+
+# Infrastructure as a Service — IaaS
+
+With IaaS, the cloud provider manages the underlying physical infrastructure.
+
+Examples include cloud-hosted virtual machines.
+
+## Cloud Provider Typically Manages
+
+- Physical datacenter
+- Physical servers
+- Physical networking
+- Host infrastructure
+
+## Customer Typically Manages
+
+- Operating systems
+- Applications
+- Configured network controls
+- Identities and access
+- Data
+
+### ELI5
+
+**IaaS = Microsoft owns the computer; you manage what runs inside it.**
+
+---
+
+# Platform as a Service — PaaS
+
+With PaaS, the cloud provider also manages the operating system and runtime environment.
+
+## Cloud Provider Typically Manages
+
+- Physical infrastructure
+- Networking hardware
+- Host systems
+- Operating system
+- Runtime/platform
+
+## Customer Typically Manages
+
+- Application code
+- Application configuration
+- Access controls
+- Data
+
+### ELI5
+
+**PaaS = Microsoft manages the platform; you manage your application and data.**
+
+---
+
+# Software as a Service — SaaS
+
+With SaaS, the cloud provider manages almost the entire application stack.
+
+Examples include Microsoft 365 services.
+
+The customer still manages important security responsibilities.
+
+## Customer Responsibilities Include
+
+- Access management
+- User identities
+- Permissions
+- Organizational data
+- Tenant configuration
+
+### ELI5
+
+**SaaS = Microsoft runs the software; you still control your users, settings, and data.**
+
+---
+
+# As You Move Toward SaaS...
+
+Think:
+
+**On-Prem → IaaS → PaaS → SaaS**
+
+As you move to the right:
+
+**The provider manages more.**
+
+But the customer never gives up all responsibility.
+
+---
+
+# Responsibilities the Customer Always Retains
+
+Microsoft Learn emphasizes four areas that remain customer responsibilities regardless of cloud service model.
+
+## Data
+
+You decide:
+
+- What data is collected
+- How sensitive it is
+- Who can access it
+- How long it is retained
+- How it should be protected
+- How compliance requirements are met
+
+### Memory Cue
+
+**Your data = your responsibility**
+
+---
+
+## Identities and Access
+
+You manage:
+
+- User accounts
+- Authentication methods
+- Access permissions
+- MFA
+- Least privilege
+
+A perfectly secured cloud platform cannot protect you if an attacker successfully uses a compromised authorized account.
+
+---
+
+## Endpoints
+
+Organizations remain responsible for devices connecting to cloud resources.
+
+Examples:
+
+- Laptops
+- Phones
+- Tablets
+- Desktops
+
+Security measures include:
+
+- Patching
+- Device management
+- Threat detection
+- Security configuration
+
+---
+
+## Configuration Choices
+
+The customer controls many security settings inside the cloud environment.
+
+Examples:
+
+- Permissions
+- Access policies
+- Network rules
+- Storage configuration
+- Tenant settings
+
+A secure cloud service can still become exposed through bad configuration.
+
+### Exam Concept
+
+**Cloud provider security does not protect against customer misconfiguration.**
+
+---
+
+# Shared Responsibility and AI
+
+The shared responsibility model also applies to AI workloads.
+
+Microsoft Learn describes an AI-enabled application using three layers:
+
+| Layer | Meaning |
+|---|---|
+| AI Platform | Infrastructure, model, and built-in safety controls |
+| AI Application | Application using the AI platform |
+| AI Usage | How people use the AI system |
+
+---
+
+## AI Platform
+
+The provider typically handles areas such as:
+
+- Physical infrastructure
+- AI model hosting
+- Underlying compute
+- Platform-level safety controls
+- Operational security of the AI service
+
+---
+
+## AI Application
+
+The organization controls things such as:
+
+- Application configuration
+- Connected data sources
+- Plugins
+- Integrations
+- Access configuration
+
+---
+
+## AI Usage
+
+The organization is responsible for:
+
+- What users enter into AI systems
+- Acceptable use policies
+- User training
+- Monitoring
+- Oversight
+
+---
+
+# Customer Responsibilities for AI
+
+Even when Microsoft secures the underlying AI platform, the customer remains responsible for:
+
+## Protecting Data
+
+Control what business and sensitive data the AI system can access.
+
+## Identity and Access Management
+
+Control:
+
+- Who can use AI applications
+- What they are allowed to do
+
+## Safe Configuration
+
+Control:
+
+- External connectors
+- Data sources
+- Logging
+- Retention
+- Access settings
+
+## AI-Specific Risks
+
+One example is:
+
+**Prompt injection**
+
+Prompt injection occurs when malicious instructions are placed into prompts or external data in an attempt to manipulate AI behavior.
+
+## User Training
+
+Users influence AI systems through their prompts and inputs.
+
+Organizations therefore need:
+
+- Training
+- Policies
+- Monitoring
+- Clear acceptable-use expectations
+
+---
+
+# Shared Responsibility Memory Sheet
 
 ## On-Premises
 
-If an organization owns and operates everything itself, the organization is responsible for essentially everything.
+**Customer manages everything**
 
-The organization manages:
+## IaaS
 
-| Responsibility |
-|---|
-| Physical datacenter |
-| Physical servers |
-| Networking |
-| Operating systems |
-| Applications |
-| Identities |
-| Accounts |
-| Data |
+**Provider = hardware**
 
-### Memory Trick
+**Customer = OS and above**
 
-**On-premises = You own everything, so you secure everything.**
+## PaaS
 
----
+**Provider = infrastructure + OS/platform**
 
-## Infrastructure as a Service — IaaS
+**Customer = application + data**
 
-Microsoft manages the physical cloud infrastructure.
+## SaaS
 
-The customer still manages much of the software environment.
+**Provider = application stack**
 
-Examples include Azure virtual machines.
-
-| Microsoft | Customer |
-|---|---|
-| Physical datacenter | Operating system |
-| Physical servers | Applications |
-| Physical networking | Identities |
-| Hardware | Accounts |
-|  | Data |
-
-### Memory Trick
-
-**IaaS = Microsoft provides the hardware; you manage the computer running on it.**
-
----
-
-## Platform as a Service — PaaS
-
-Microsoft manages both the infrastructure and much of the platform.
-
-The customer mainly focuses on applications, identities, and data.
-
-### Memory Trick
-
-**PaaS = Microsoft manages the platform; you manage what you build on it.**
-
----
-
-## Software as a Service — SaaS
-
-Microsoft manages nearly the entire technical platform.
-
-Examples include Microsoft 365.
-
-The customer is still responsible for important areas such as:
-
-| Customer Responsibility |
-|---|
-| User identities |
-| Access permissions |
-| Accounts |
-| Data |
-| Security configuration |
-
-### Important Exam Concept
-
-Even with SaaS, the customer is **not completely free of security responsibilities**.
-
-The customer must still protect identities, configure access correctly, and protect organizational data.
-
-### Memory Trick
-
-**SaaS = Microsoft runs the software, but you still control your users and data.**
+**Customer = identities + access + data + configuration**
 
 ---
 
@@ -123,157 +356,606 @@ The customer must still protect identities, configure access correctly, and prot
 
 ## Big Idea
 
-Defense in depth means using **multiple layers of security** instead of relying on one security control.
+Defense in depth means using **multiple overlapping security layers**.
 
-If one layer fails, another layer can still protect the organization.
+Do not depend on one firewall, one password, or one security tool.
 
-Think of a castle:
+If one security layer fails, another layer should still protect the organization.
 
-An attacker may get past the outer wall, but there are still gates, guards, doors, and locks behind it.
+### ELI5
 
----
+Think of protecting a vault with:
 
-## Defense-in-Depth Layers
+- Building security
+- Cameras
+- Guards
+- Badge reader
+- Locked door
+- Vault
+- Locked container inside the vault
 
-A common model moves from the outside toward the data:
-
-| Layer | Purpose |
-|---|---|
-| Physical Security | Protect buildings, datacenters, and hardware |
-| Identity and Access | Verify users and control permissions |
-| Perimeter | Protect the boundary of the network |
-| Network | Control traffic between network resources |
-| Compute | Protect servers, virtual machines, and endpoints |
-| Application | Protect software and applications |
-| Data | Protect the actual information |
+Getting past one control does not give the attacker everything.
 
 ---
 
-## Data Is the Final Layer
+# Seven Defense-in-Depth Layers
 
-The **data layer** protects the information itself.
+From outermost toward the protected data:
 
-Examples include:
+1. Physical Security
+2. Identity and Access
+3. Perimeter
+4. Network
+5. Compute
+6. Application
+7. Data
 
-Encryption
+---
 
-Access controls
+## 1. Physical Security
 
-Data classification
+Protects physical infrastructure.
 
-Data Loss Prevention
+Examples:
+
+- Locked facilities
+- Security guards
+- Badge readers
+- Surveillance cameras
+
+### Simple Meaning
+
+**Keep unauthorized people away from the hardware.**
+
+---
+
+## 2. Identity and Access
+
+Ensures users are authenticated and authorized.
+
+Examples:
+
+- MFA
+- Role-Based Access Control — RBAC
+- Conditional Access
+- Least privilege
+
+### Simple Meaning
+
+**Make sure the right person gets the right access.**
+
+---
+
+## 3. Perimeter Security
+
+Protects the outer boundary of the network.
+
+Examples:
+
+- Firewalls
+- DDoS protection
+
+### Simple Meaning
+
+**Protect the front door of the network.**
+
+---
+
+## 4. Network Security
+
+Controls communication between resources.
+
+Examples:
+
+- Network segmentation
+- Network Security Groups — NSGs
+- Traffic restrictions
+
+### Simple Meaning
+
+**Even if someone gets inside, don't let them freely move everywhere.**
+
+---
+
+## 5. Compute Security
+
+Protects systems performing computing work.
+
+Examples:
+
+- Virtual machines
+- Containers
+- Servers
+
+Controls include:
+
+- Patching
+- Closing unnecessary ports
+- Restricting administrator access
+- Monitoring abnormal behavior
+
+---
+
+## 6. Application Security
+
+Protects software applications.
+
+Examples:
+
+- Secure development
+- Input validation
+- Authentication
+- Authorization
+- Security testing
+
+Application security helps prevent attacks such as:
+
+- SQL injection
+- Cross-site scripting — XSS
+
+---
+
+## 7. Data Security
+
+The innermost layer.
+
+Protects the information itself.
+
+Examples:
+
+- Encryption
+- Access controls
+- Classification
 
 ### Exam Cue
 
-If a question asks which layer protects information **regardless of where it is stored**, think:
+If asked what ultimately needs to be protected:
 
 **DATA**
 
 ---
 
-# 3. Zero Trust Model
+# Why Defense in Depth Matters
+
+Any individual security control can fail because of:
+
+- Vulnerabilities
+- Misconfiguration
+- Human mistakes
+- Business exceptions
+
+Multiple security layers make it harder for one failure to become a full breach.
+
+---
+
+# CIA Triad
+
+The three fundamental security goals are:
+
+**Confidentiality**
+
+**Integrity**
+
+**Availability**
+
+### Memory Trick
+
+**CIA**
+
+---
+
+# Confidentiality
+
+Confidentiality means:
+
+**Only authorized people should be able to see protected information.**
+
+Examples of confidential information:
+
+- Passwords
+- Customer records
+- Financial information
+- Private communications
+- Intellectual property
+
+Controls include:
+
+- Encryption
+- Access controls
+- Secure transmission
+
+### Exam Question
+
+**Who can see the data?**
+
+= Confidentiality
+
+---
+
+# Integrity
+
+Integrity means:
+
+**Data remains accurate, complete, and unchanged except through authorized actions.**
+
+Threats to integrity include:
+
+- Unauthorized modification
+- Data corruption
+- Malicious tampering
+- Unauthorized deletion
+
+Controls include:
+
+- Hashing
+- Digital signatures
+- Audit logs
+- Database controls
+
+### Exam Question
+
+**Has the data been changed?**
+
+= Integrity
+
+---
+
+# Availability
+
+Availability means:
+
+**Authorized users can access systems and data when they need them.**
+
+Threats include:
+
+- DDoS
+- Ransomware
+- Hardware failure
+- Software failure
+- Natural disaster
+
+Controls include:
+
+- Redundancy
+- Load balancing
+- Failover
+- Backups
+- Recovery plans
+- DDoS protection
+
+### Exam Question
+
+**Can authorized users access it when needed?**
+
+= Availability
+
+---
+
+# CIA Attack Examples
+
+| Attack | Security Goal Affected |
+|---|---|
+| Stealing confidential records | Confidentiality |
+| Changing database records | Integrity |
+| Taking a website offline | Availability |
+
+---
+
+# 3. Zero Trust
 
 ## Big Idea
 
-Traditional security often assumed:
+Zero Trust is a **security strategy**, not one Microsoft product.
 
-> If you are inside the corporate network, you can probably be trusted.
+Core idea:
 
-Zero Trust assumes:
+**Trust no one automatically. Verify everything.**
 
-> Nobody should automatically be trusted simply because of where they are located.
-
-Every access attempt should be evaluated.
+Being inside the organization's network does not automatically make a user, device, or application trustworthy.
 
 ---
 
-## Three Zero Trust Principles
+# Traditional Security
 
-| Principle | Meaning |
-|---|---|
-| Verify Explicitly | Always verify identity and access conditions |
-| Use Least Privilege | Give only the minimum access necessary |
-| Assume Breach | Design security as though attackers may already be inside |
+Traditional network security often operated like a castle:
+
+**Outside = untrusted**
+
+**Inside = trusted**
+
+Modern computing broke this model because users now work from:
+
+- Home
+- Public networks
+- Cloud environments
+- Personal devices
+- Mobile devices
+- Third-party applications
+
+An attacker who steals credentials may also bypass the traditional network perimeter.
 
 ---
 
-## Verify Explicitly
+# Three Zero Trust Principles
 
-Access decisions should use available information.
+## 1. Verify Explicitly
 
-This may include:
+Always authenticate and authorize using all available information.
 
-Identity
+Signals can include:
 
-Location
-
-Device
-
-Application
-
-Risk level
-
-Authentication method
+- User identity
+- Location
+- Device
+- Device compliance
+- Application
+- Data sensitivity
+- Risk
+- Unusual activity
 
 ### Simple Meaning
 
-**Prove who you are before getting access.**
+**Don't assume. Check.**
 
 ---
 
-## Least Privilege
+## 2. Use Least-Privileged Access
 
-Users should receive only the permissions they actually need.
+Give users and systems:
 
-A user should not receive administrator privileges simply because they might need them someday.
+**Only the access they need**
 
-### Simple Meaning
+and
 
-**Give people the minimum access necessary to do their job.**
+**Only for as long as they need it**
+
+Microsoft Learn specifically discusses:
+
+### Just-in-Time — JIT
+
+Access is granted only when needed and removed afterward.
+
+### Just-Enough-Access — JEA
+
+Only the exact permissions required are granted.
+
+### Memory Trick
+
+**JIT = WHEN**
+
+**JEA = HOW MUCH**
 
 ---
 
-## Assume Breach
+## 3. Assume Breach
 
-Organizations should operate as if an attacker could already be inside the environment.
+Design security as if an attacker may eventually get through your defenses.
 
-Security teams should:
+This means:
 
-Limit access
-
-Segment systems
-
-Monitor activity
-
-Detect suspicious behavior
-
-Protect important data
+- Segment access
+- Encrypt data
+- Monitor activity
+- Detect threats
+- Limit attacker movement
+- Reduce damage
 
 ### Simple Meaning
 
-**Plan as if someone has already gotten in.**
+**Plan as though the bad guy may already be inside.**
+
+---
+
+# Seven Zero Trust Pillars
+
+The current Microsoft model uses seven interconnected pillars:
+
+1. Identities
+2. Devices
+3. Applications
+4. Data
+5. Infrastructure
+6. Networks
+7. Visibility, Automation, and Orchestration
+
+---
+
+## 1. Identities
+
+Identities can include:
+
+- Users
+- Services
+- Devices
+
+Identity controls include:
+
+- Strong authentication
+- Least privilege
+- Risk evaluation
+
+### Key Idea
+
+**Identity is a primary control plane in modern security.**
+
+---
+
+## 2. Devices
+
+Every device accessing organizational resources can become an attack point.
+
+Organizations evaluate:
+
+- Device health
+- Compliance
+- Management status
+- Signs of compromise
+
+A risky device can be:
+
+- Blocked
+- Restricted
+- Required to meet additional controls
+
+---
+
+## 3. Applications
+
+Applications are how users consume data.
+
+Organizations need visibility into:
+
+- Approved applications
+- Unapproved applications
+- Permissions
+- Application access
+
+### Shadow IT
+
+Applications employees use without formal organizational approval are often called:
+
+**Shadow IT**
+
+---
+
+## 4. Data
+
+Data should be:
+
+- Classified
+- Labeled
+- Protected
+- Encrypted
+
+Protection should remain with the data even when it leaves the organization's direct control.
+
+---
+
+## 5. Infrastructure
+
+Infrastructure can include:
+
+- On-premises systems
+- Cloud systems
+- Servers
+- Virtual machines
+
+Zero Trust applies controls such as:
+
+- Continuous assessment
+- Configuration compliance
+- Monitoring
+- JIT administration
+
+---
+
+## 6. Networks
+
+Networks should be segmented.
+
+### Microsegmentation
+
+Creates smaller security boundaries inside the network.
+
+Goal:
+
+**Compromise of one network area should not give access to everything else.**
+
+Controls include:
+
+- Segmentation
+- Encryption
+- Monitoring
+- Threat protection
+
+---
+
+## 7. Visibility, Automation, and Orchestration
+
+This pillar ties the others together.
+
+It collects and correlates security information across the environment.
+
+Important technologies include:
+
+### SIEM
+
+**Security Information and Event Management**
+
+Collects and correlates security signals.
+
+### SOAR
+
+**Security Orchestration, Automation, and Response**
+
+Automates actions based on detected threats.
+
+You will study SIEM and SOAR in more detail later in SC-900.
+
+---
+
+# Zero Trust Memory Sheet
+
+## Three Principles
+
+**Verify explicitly**
+
+**Use least privilege**
+
+**Assume breach**
+
+## Seven Pillars
+
+**Identity**
+
+**Devices**
+
+**Applications**
+
+**Data**
+
+**Infrastructure**
+
+**Networks**
+
+**Visibility / Automation / Orchestration**
 
 ---
 
 # 4. Encryption and Hashing
 
-## Encryption
+# Encryption
 
-Encryption transforms readable data into unreadable data.
+Encryption makes information unreadable to unauthorized users.
 
-Encrypted information can later be converted back into readable information using the appropriate key.
+Encrypted data must be:
 
-### Purpose
+**Decrypted**
+
+using the correct:
+
+**Key**
+
+### Main Security Goal
 
 **Confidentiality**
 
-Encryption prevents unauthorized people from reading information.
-
 ---
 
-## Symmetric Encryption
+# Symmetric Encryption
 
-Symmetric encryption uses the **same key** for encryption and decryption.
+Symmetric encryption uses:
+
+**The same key for encryption and decryption**
+
+Advantages:
+
+- Fast
+- Efficient for large amounts of data
+
+Challenge:
+
+**How do you securely share the secret key?**
 
 ### Memory Trick
 
@@ -281,67 +963,362 @@ Symmetric encryption uses the **same key** for encryption and decryption.
 
 ---
 
-## Asymmetric Encryption
+# Asymmetric Encryption
 
-Asymmetric encryption uses a **key pair**:
+Asymmetric encryption uses a key pair:
 
-| Key |
-|---|
-| Public Key |
-| Private Key |
+**Public Key**
 
-One key can encrypt information and the corresponding key can decrypt it.
+and
+
+**Private Key**
+
+The keys are mathematically related.
+
+Data encrypted with the public key can be decrypted using the corresponding private key.
+
+### Advantages
+
+The public key can be shared openly while the private key remains secret.
 
 ### Memory Trick
 
 **Asymmetric = A pair of different keys**
 
-### Exam Cue
+---
 
-If the question mentions:
+# Public and Private Key Exam Cue
+
+If the question says:
 
 > public key + private key
 
-The answer is:
+Think:
 
 **Asymmetric encryption**
 
 ---
 
+# Digital Signatures
+
+Asymmetric cryptography also enables:
+
+**Digital signatures**
+
+A sender signs information using their:
+
+**Private key**
+
+Others can verify the signature using the sender's:
+
+**Public key**
+
+Digital signatures help verify:
+
+## Authenticity
+
+Did this information actually come from the expected sender?
+
+## Integrity
+
+Was the information changed after it was signed?
+
+### Memory Trick
+
+**Digital signature = WHO sent it + WAS it changed?**
+
+---
+
+# Encryption by Data State
+
+Microsoft Learn identifies three data states:
+
+1. Data at rest
+2. Data in transit
+3. Data in use
+
+---
+
+# Data at Rest
+
+Data stored somewhere.
+
+Examples:
+
+- Hard drive
+- Database
+- Storage account
+
+Encryption protects stored information if the storage is stolen or accessed improperly.
+
+### Memory Trick
+
+**At rest = sitting somewhere**
+
+---
+
+# Data in Transit
+
+Data moving between locations.
+
+Examples:
+
+- Across the internet
+- Between cloud services
+- Across a private network
+
+Common protection:
+
+**TLS**
+
+Example:
+
+**HTTPS**
+
+### Memory Trick
+
+**In transit = moving**
+
+---
+
+# Data in Use
+
+Data actively being processed.
+
+Examples:
+
+- Data in RAM
+- Data being processed by the CPU
+
+Traditional systems usually need to decrypt data before processing it.
+
+This creates a potential exposure point.
+
+---
+
+# Confidential Computing
+
+Confidential computing can protect:
+
+**Data in use**
+
+It uses protected execution environments sometimes called:
+
+**Secure enclaves**
+
+These environments help process data while shielding it from other parts of the system.
+
+---
+
+# Key Management
+
+Encryption is only effective if encryption keys remain secure.
+
+Key management includes:
+
+- Generating keys
+- Storing keys
+- Protecting keys
+- Rotating keys
+- Retiring keys
+
+---
+
+# Key Management Best Practices
+
+## Store Keys Separately
+
+Do not store the encryption key beside the data it protects.
+
+## Protect Keys with Dedicated Hardware
+
+A:
+
+**Hardware Security Module — HSM**
+
+is a specialized tamper-resistant device used to protect cryptographic keys.
+
+## Rotate Keys
+
+Change keys periodically.
+
+## Restrict Access
+
+Only authorized users and systems should access keys.
+
+Apply:
+
+- Strong authentication
+- Least privilege
+
+---
+
+# Azure Key Vault
+
+Azure Key Vault is a managed cloud service used to store and manage things such as:
+
+- Encryption keys
+- Certificates
+- Secrets
+
+### Exam Cue
+
+If asked which Azure service protects:
+
+**keys, secrets, certificates**
+
+Think:
+
+**Azure Key Vault**
+
+---
+
 # Hashing
 
-Hashing converts data into a fixed-length value called a **hash**.
+Hashing converts input into a fixed-length value called a:
 
-Hashing is designed to be **one-way**.
+**Hash**
 
-You do not normally reverse a hash to recover the original information.
+or
 
----
+**Digest**
 
-## Primary Purpose of Hashing
+Hashing is designed to be:
 
-Hashing is commonly used to verify:
+**One-way**
 
-**Integrity**
-
-If the original data changes, the resulting hash changes.
+You should not be able to reverse the hash and recover the original information.
 
 ---
 
-## Encryption vs. Hashing
+# Hashing vs. Encryption
 
 | Encryption | Hashing |
 |---|---|
-| Reversible with the correct key | Designed to be one-way |
-| Protects confidentiality | Helps verify integrity |
-| Uses encryption keys | Produces a hash value |
-| Original data can be recovered | Original data is not intended to be recovered |
+| Reversible with the correct key | One-way |
+| Uses keys | Does not use encryption keys |
+| Protects confidentiality | Often verifies integrity |
+| Original data can be recovered | Original data is not meant to be recovered |
 
 ### Memory Trick
 
 **Encryption = Hide it**
 
-**Hashing = Check it**
+**Hashing = Fingerprint it**
+
+---
+
+# Hashing and Integrity
+
+Changing the original data causes its hash to change.
+
+This makes hashing useful for checking:
+
+**Integrity**
+
+Example:
+
+You download software and compare its hash to the publisher's expected hash.
+
+If they match, the file probably has not been changed.
+
+---
+
+# Password Hashing
+
+Secure systems generally should not store passwords in plain text.
+
+Instead:
+
+1. User creates a password
+2. System hashes the password
+3. System stores the hash
+4. User signs in later
+5. Entered password is hashed
+6. New hash is compared with stored hash
+
+If the hashes match:
+
+**Authentication succeeds**
+
+---
+
+# Rainbow Tables
+
+Basic password hashing can still be attacked using precomputed hash collections.
+
+These may be used in:
+
+- Rainbow table attacks
+- Dictionary attacks
+
+This is why secure password hashing uses:
+
+**Salting**
+
+---
+
+# Salting
+
+A salt is a:
+
+**Unique random value added to a password before hashing**
+
+Because each user gets a different salt:
+
+Two users with the same password will still produce different stored hashes.
+
+This makes precomputed rainbow tables far less useful.
+
+### Memory Trick
+
+**Salt = Random extra ingredient before hashing**
+
+---
+
+# Encryption and Hashing Memory Sheet
+
+## Symmetric
+
+**Same key**
+
+## Asymmetric
+
+**Public + Private key**
+
+## Digital Signature
+
+**Private key signs**
+
+**Public key verifies**
+
+## Encryption
+
+**Confidentiality**
+
+## Hashing
+
+**Integrity**
+
+## Data States
+
+**At rest = stored**
+
+**In transit = moving**
+
+**In use = processing**
+
+## HSM
+
+**Specialized hardware that protects cryptographic keys**
+
+## Azure Key Vault
+
+**Keys + Secrets + Certificates**
+
+## Salt
+
+**Random value added before password hashing**
 
 ---
 
@@ -355,238 +1332,350 @@ GRC stands for:
 
 **Compliance**
 
-These three concepts help organizations manage security in a structured way.
+GRC provides a structured way for organizations to manage:
+
+- Security decisions
+- Organizational risk
+- Laws
+- Regulations
+- Standards
+- Accountability
 
 ---
 
-## Governance
+# Governance
 
-Governance defines how an organization makes decisions and establishes rules.
+Governance is the system of:
 
-Governance includes things such as:
+- Rules
+- Practices
+- Processes
 
-Policies
+that an organization uses to direct and control its activities.
 
-Standards
+Security governance can include:
 
-Procedures
+- Data classification policies
+- Data retention policies
+- Identity standards
+- Access management standards
+- Privileged access approval
+- Security control ownership
+- Accountability
+- Security strategy
 
-Roles
+### ELI5
 
-Responsibilities
-
-Oversight
-
-### Simple Meaning
-
-**Governance = What rules do we follow and who is responsible?**
-
----
-
-## Risk
-
-Risk is the possibility that a threat could cause harm to an organization.
-
-Organizations identify risks, evaluate them, and decide how to respond.
-
-### Simple Meaning
-
-**Risk = What could go wrong, and how bad would it be?**
+**Governance = Who makes the rules, what are the rules, and who is responsible?**
 
 ---
 
-## Common Risk Responses
+# Risk
+
+Risk management is the process of understanding potential events that could negatively affect:
+
+- Systems
+- Data
+- Operations
+- Organizational objectives
+- Customer trust
+
+The goal is **not** to eliminate every possible risk.
+
+The goal is to:
+
+**Understand risk well enough to make informed decisions.**
+
+---
+
+# Internal and External Risks
+
+## External Risk Examples
+
+- Cyberattacks
+- Natural disasters
+- Economic disruption
+- Regulatory changes
+- Third-party supplier problems
+
+## Internal Risk Examples
+
+- Employee mistakes
+- Insider threats
+- Fraud
+- Weak security processes
+
+---
+
+# Four-Step Risk Management Process
+
+Microsoft Learn presents the process as:
+
+1. Identify
+2. Assess
+3. Respond
+4. Monitor
+
+---
+
+## 1. Identify
+
+Discover potential risks.
+
+Sources can include:
+
+- Interviews
+- Vulnerability assessments
+- Audit findings
+- Monitoring
+
+### Question
+
+**What could go wrong?**
+
+---
+
+## 2. Assess
+
+Evaluate:
+
+- Likelihood
+- Impact
+
+This can produce a risk score used to prioritize risks.
+
+### Question
+
+**How likely is it, and how bad would it be?**
+
+---
+
+## 3. Respond
+
+Choose how to handle the risk.
+
+Common responses:
 
 | Response | Meaning |
 |---|---|
-| Avoid | Stop doing the risky activity |
-| Mitigate | Reduce the likelihood or impact |
+| Accept | Live with the risk |
+| Mitigate | Reduce likelihood or impact |
 | Transfer | Shift some risk to another party |
-| Accept | Acknowledge the risk and live with it |
+| Avoid | Stop the activity creating the risk |
+
+### Memory Trick
+
+**Accept — Mitigate — Transfer — Avoid**
 
 ---
+
+## 4. Monitor
+
+Continue tracking:
+
+- Risk
+- Controls
+- Changes
+- Effectiveness
+
+Risk management is continuous.
+
+---
+
+# Compliance
+
+Compliance means following the:
+
+- Laws
+- Regulations
+- Standards
+- Policies
+
+that apply to an organization.
+
+Requirements may depend on:
+
+- Industry
+- Geography
+- Type of data handled
+
+---
+
+# Compliance Examples
+
+Microsoft Learn provides examples including:
+
+## HIPAA
+
+U.S. requirements involving protection and handling of health information.
+
+## ISO 27001
+
+International standard for information security management systems.
+
+## SOC 2
+
+Auditing standard commonly relevant to service organizations processing or storing customer data.
+
+---
+
+# Compliance Is NOT the Same as Security
+
+This is an important exam concept.
 
 ## Compliance
 
-Compliance means meeting required rules or requirements.
+Focuses on meeting required rules and minimum standards.
 
-Requirements can come from:
+## Security
 
-Laws
+Is broader.
 
-Regulations
+Security includes all measures used to protect:
 
-Industry standards
+- Data
+- Identities
+- Systems
+- Applications
+- Infrastructure
 
-Contracts
+### Important Point
 
-Internal policies
+An organization can be:
 
-### Simple Meaning
+**Compliant**
 
-**Compliance = Are we following the rules we are required to follow?**
+and still:
+
+**Have security vulnerabilities**
+
+because compliance may represent only the minimum required standard.
 
 ---
 
-# Security vs. Compliance
+# Data Residency
 
-Security and compliance are related, but they are not identical.
+Data residency refers to requirements about:
 
-| Security | Compliance |
+**Where data is physically stored**
+
+and sometimes:
+
+- Where it can be processed
+- Where it can be transferred
+- Where it can be accessed
+
+### Exam Question
+
+**Where is the data physically located?**
+
+= Data Residency
+
+---
+
+# Data Sovereignty
+
+Data sovereignty means:
+
+**Data is subject to the laws and regulations of the country or region where it is collected, stored, or processed.**
+
+Data may interact with several jurisdictions.
+
+Example:
+
+- Collected in Country A
+- Stored in Country B
+- Processed in Country C
+
+Multiple legal requirements may apply.
+
+### Exam Question
+
+**Whose laws apply to this data?**
+
+= Data Sovereignty
+
+---
+
+# Residency vs. Sovereignty
+
+| Concept | Key Question |
 |---|---|
-| Protects systems, identities, and data | Demonstrates adherence to requirements |
-| Focuses on reducing threats and risk | Focuses on laws, regulations, policies, and standards |
-| Can exceed minimum requirements | Often establishes required minimums |
-
-### Important Concept
-
-An organization can technically be compliant with a requirement and still have security weaknesses.
-
-Good security usually goes beyond simply checking compliance boxes.
-
----
-
-# Core Security Concepts
-
-## Confidentiality
-
-Only authorized people should be able to view information.
-
-Think:
-
-**Who can see it?**
-
-Encryption helps support confidentiality.
-
----
-
-## Integrity
-
-Information should not be changed without authorization.
-
-Think:
-
-**Has the data been altered?**
-
-Hashing can help verify integrity.
-
----
-
-## Availability
-
-Systems and information should be accessible when authorized users need them.
-
-Think:
-
-**Can I access it when I need it?**
-
----
-
-# CIA Triad
-
-The three fundamental security objectives are:
-
-| Letter | Meaning | Question |
-|---|---|---|
-| C | Confidentiality | Who can see the data? |
-| I | Integrity | Has the data been changed? |
-| A | Availability | Can authorized users access it? |
+| Data Residency | Where is the data located? |
+| Data Sovereignty | Which laws apply to the data? |
 
 ### Memory Trick
 
-**CIA = Confidentiality, Integrity, Availability**
+**Residency = Residence**
+
+**Sovereignty = Sovereign laws**
 
 ---
 
-# Identity as the Security Perimeter
+# Data Privacy
 
-Traditional security focused heavily on protecting the corporate network.
+Data privacy concerns the appropriate handling of:
 
-Modern organizations use:
+**Personal data**
 
-Cloud applications
+Personal data can include:
 
-Remote work
-
-Mobile devices
-
-Bring Your Own Device — BYOD
-
-Software as a Service — SaaS
-
-Users may access company resources without ever being physically connected to the corporate network.
-
-Because of this, **identity becomes a primary security perimeter**.
-
-### Simple Meaning
-
-Security increasingly asks:
-
-> Who are you?
-
-rather than:
-
-> Are you inside our building or network?
+- Names
+- Email addresses
+- Phone numbers
+- Location history
+- Browsing activity
+- Other information linked to an identifiable person
 
 ---
 
-# Authentication vs. Authorization
+# Privacy Requirements May Include
 
-These concepts are easy to confuse.
+Organizations may need to:
 
-## Authentication
+- Explain what personal information they collect
+- Explain how it is used
+- Obtain consent
+- Protect the information
+- Allow individuals to access their data
+- Allow individuals to correct their data
+- Allow individuals to delete certain data
 
-Authentication proves **who you are**.
+### ELI5
 
-Examples:
-
-Password
-
-MFA
-
-Biometrics
-
-Security key
-
-### Memory Trick
-
-**Authentication = Who are you?**
+**Privacy = How personal information about people is collected, used, protected, and controlled.**
 
 ---
 
-## Authorization
+# GRC Memory Sheet
 
-Authorization determines **what you are allowed to do**.
+## Governance
 
-Examples:
+**Rules + Direction + Accountability**
 
-Read a file
+## Risk
 
-Modify a database
+**What could go wrong?**
 
-Access SharePoint
+Process:
 
-Administer users
+**Identify → Assess → Respond → Monitor**
 
-### Memory Trick
+## Compliance
 
-**Authorization = What are you allowed to do?**
+**Are we following required laws, regulations, standards, and policies?**
 
----
+## Data Residency
 
-## Example
+**WHERE is the data?**
 
-A user enters a password and successfully signs in.
+## Data Sovereignty
 
-That is:
+**WHOSE LAWS apply?**
 
-**Authentication**
+## Data Privacy
 
-Microsoft then determines whether that user can open a confidential SharePoint site.
-
-That is:
-
-**Authorization**
+**HOW is personal information handled?**
 
 ---
 
@@ -594,27 +1683,96 @@ That is:
 
 | If the Question Mentions... | Think... |
 |---|---|
-| Minimum necessary permissions | Least privilege |
-| Never automatically trust | Zero Trust |
-| Explicit identity verification | Verify explicitly |
-| Plan as if attacker is already inside | Assume breach |
-| Multiple security layers | Defense in depth |
+| Customer vs. cloud provider duties | Shared responsibility |
+| Moving from IaaS → PaaS → SaaS | Provider takes more responsibility |
+| Data, identities, endpoints, configuration | Customer responsibility |
+| AI platform infrastructure/model hosting | Provider responsibility |
+| AI prompts, access, connectors, policies | Customer responsibility |
+| Multiple overlapping security layers | Defense in depth |
+| Protecting information from unauthorized viewing | Confidentiality |
+| Ensuring data was not changed | Integrity |
+| Ensuring systems remain accessible | Availability |
+| Trust nobody automatically | Zero Trust |
+| Evaluate multiple signals | Verify explicitly |
+| Minimum permissions | Least privilege |
+| Access only when needed | JIT |
+| Only permissions needed | JEA |
+| Design as if attacker is already inside | Assume breach |
+| Unapproved apps | Shadow IT |
 | Public + private key | Asymmetric encryption |
-| Same key encrypts and decrypts | Symmetric encryption |
-| Protecting confidentiality | Encryption |
-| Checking whether data changed | Hashing / Integrity |
-| Laws and regulations | Compliance |
+| Same key encrypts/decrypts | Symmetric encryption |
+| Verify sender and unchanged data | Digital signature |
+| Stored data | Data at rest |
+| Moving data | Data in transit |
+| Data being processed | Data in use |
+| Protected execution environment | Confidential computing |
+| Tamper-resistant key hardware | HSM |
+| Keys, secrets, certificates | Azure Key Vault |
+| One-way fingerprint | Hash |
+| Random value added before password hashing | Salt |
 | Policies and organizational direction | Governance |
-| What could go wrong | Risk |
-| Who are you? | Authentication |
-| What can you access? | Authorization |
-| Who can see the data? | Confidentiality |
-| Has the data changed? | Integrity |
-| Can users access it? | Availability |
+| Likelihood + impact | Risk assessment |
+| Accept / Mitigate / Transfer / Avoid | Risk response |
+| Laws and regulations | Compliance |
+| Physical location of data | Data residency |
+| Laws applying based on location | Data sovereignty |
+| Handling personal information | Data privacy |
 
 ---
 
-# Module 1 Memory Sheet
+# Final Module 1 Cram Sheet
+
+## Shared Responsibility
+
+**On-Prem = Customer does everything**
+
+**IaaS = Provider handles infrastructure**
+
+**PaaS = Provider also handles OS/platform**
+
+**SaaS = Provider handles application stack**
+
+Customer always retains responsibility for:
+
+**Data**
+
+**Identity/access**
+
+**Endpoints**
+
+**Configuration**
+
+---
+
+## Defense in Depth
+
+Seven layers:
+
+**Physical**
+
+**Identity & Access**
+
+**Perimeter**
+
+**Network**
+
+**Compute**
+
+**Application**
+
+**Data**
+
+---
+
+## CIA
+
+**Confidentiality = Who can see it?**
+
+**Integrity = Was it changed?**
+
+**Availability = Can I access it?**
+
+---
 
 ## Zero Trust
 
@@ -624,60 +1782,95 @@ That is:
 
 **Assume Breach**
 
+Seven pillars:
+
+**Identity**
+
+**Devices**
+
+**Applications**
+
+**Data**
+
+**Infrastructure**
+
+**Networks**
+
+**Visibility / Automation / Orchestration**
+
 ---
 
-## CIA Triad
-
-**Confidentiality**
-
-**Integrity**
-
-**Availability**
-
----
-
-## Encryption
+## Cryptography
 
 **Symmetric = Same key**
 
-**Asymmetric = Public + Private key**
+**Asymmetric = Public + Private**
 
 **Encryption = Confidentiality**
 
----
+**Hashing = Integrity**
 
-## Hashing
+**Digital signature = Authenticity + Integrity**
 
-**One-way**
+**At Rest = Stored**
 
-**Integrity**
+**In Transit = Moving**
 
-**Hash changes if data changes**
+**In Use = Processing**
 
----
+**HSM = Protect cryptographic keys**
 
-## Identity
+**Key Vault = Keys + Secrets + Certificates**
 
-**Authentication = Who are you?**
-
-**Authorization = What can you do?**
+**Salt = Random input added before password hashing**
 
 ---
 
 ## GRC
 
-**Governance = Rules and direction**
+**Governance = Rules**
 
 **Risk = What could go wrong**
 
-**Compliance = Are we following required rules**
+**Compliance = Follow requirements**
+
+Risk process:
+
+**Identify → Assess → Respond → Monitor**
+
+Risk responses:
+
+**Accept**
+
+**Mitigate**
+
+**Transfer**
+
+**Avoid**
+
+Data concepts:
+
+**Residency = WHERE**
+
+**Sovereignty = WHOSE LAWS**
+
+**Privacy = PERSONAL DATA HANDLING**
 
 ---
 
 # Final Takeaway
 
-The main idea of this module is that modern security does not rely on one tool or one network boundary.
+This module establishes the security concepts used throughout the rest of SC-900.
 
-Organizations divide security responsibilities with cloud providers, use multiple layers of protection, follow Zero Trust principles, protect data with encryption and hashing, and manage organizational security through governance, risk, and compliance.
+Modern cloud security depends on:
 
-For SC-900, focus on recognizing **which concept Microsoft is describing in a scenario** rather than memorizing long definitions.
+1. Understanding what the customer and provider are each responsible for.
+2. Protecting systems with multiple security layers.
+3. Protecting confidentiality, integrity, and availability.
+4. Applying Zero Trust continuously instead of automatically trusting users or devices.
+5. Using encryption and hashing appropriately.
+6. Managing encryption keys securely.
+7. Governing organizational security through structured risk and compliance practices.
+8. Understanding where data resides, which laws govern it, and how personal information must be handled.
+
+For the SC-900 exam, focus on recognizing the concept being described in a scenario rather than memorizing long definitions.
