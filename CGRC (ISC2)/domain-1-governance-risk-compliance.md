@@ -947,3 +947,37 @@ A GRC program connects:
 The central principle is:
 
 > Security and privacy risks must be managed throughout the organization and across the information and system life cycles, with clearly assigned responsibility and evidence that controls operate effectively.
+
+---
+
+## Official-Course Coverage Addendum (November 2026)
+
+The earlier notes cover the Domain 1 objectives broadly. Comparing them with the completed ISC2 lesson catalogue and the 7th-edition textbook exposed several topics that deserved explicit treatment. This addendum closes those gaps; it is an independent paraphrase, not official ISC2 material.
+
+### NIST Cybersecurity Framework (CSF) 2.0
+
+The CSF helps an organization describe and improve cybersecurity outcomes without prescribing one technology stack. Its six functions are **Govern, Identify, Protect, Detect, Respond, and Recover**. The *Core* organizes outcomes; *Profiles* describe current and target outcomes for a context; *Tiers* describe the rigor of risk governance and management practices. Do not confuse CSF Tiers with the three organizational levels in NIST SP 800-39, or with low/moderate/high FIPS impact levels. A profile gap can guide priorities, but a profile by itself does not certify that controls are operating.
+
+### Organization-wide risk management: NIST SP 800-39
+
+NIST SP 800-39 places information-security risk inside mission and enterprise decision-making. Risk management crosses **Tier 1: organization**, **Tier 2: mission/business process**, and **Tier 3: information system**. Senior leaders establish direction and risk appetite; business owners translate that into mission processes; system personnel implement and report on the resulting safeguards. Risk information flows both ways: a technical weakness can become a mission-level risk, while enterprise risk decisions change system requirements. The recurring activities are framing, assessing, responding to, and monitoring risk.
+
+NIST SP 800-37's seven-step *system RMF*—Prepare, Categorize, Select, Implement, Assess, Authorize, Monitor—is related but not the same publication or structure. Be able to explain which question each answers: SP 800-39 integrates risk across the enterprise; SP 800-37 organizes system/control decisions.
+
+### Risk assessment: NIST SP 800-30
+
+A risk assessment needs a defined model and a method appropriate to its decision. Identify relevant threat sources/events, vulnerabilities and predisposing conditions, likelihood, impact, existing safeguards, and uncertainty. Threat-oriented, asset/impact-oriented, and vulnerability-oriented starting points may be useful; state what the assessment actually covers. Qualitative, semi-quantitative, and quantitative analyses each rely on assumptions and evidence. Document the rationale behind ratings so another reviewer can reproduce or challenge them. Assessments may occur at the organization, mission, or system tier and should be updated as conditions change. A high *impact categorization* from Domain 2 is not itself a calculated risk score.
+
+### ISO/IEC 27001 certification and comparison with RMF
+
+ISO/IEC 27001 centers on an information security management system (ISMS). The organization defines its scope, assesses and treats risks, selects and justifies applicable controls in a **Statement of Applicability (SoA)**, implements and monitors the ISMS, and may seek an independent certification audit. Certification commonly involves a documentation-focused Stage 1 and an implementation/effectiveness-focused Stage 2, followed by surveillance and recertification activity. Certification attests to the specified ISMS scope; it is not a blanket approval of every system. NIST RMF focuses on a defined system or common control and an accountable risk-authorization decision. Similar steps do not imply identical roles or outcomes.
+
+### Additional privacy law: Singapore PDPA
+
+The official course includes Singapore's **Personal Data Protection Act (PDPA)** alongside GDPR, FISMA, HIPAA, and executive orders. PDPA is a jurisdiction-specific framework for organizational handling of personal data. For a cross-border system, identify applicable consent/notification, purpose, access/correction, protection, retention, transfer, and breach obligations under the current law and organizational legal advice. Do not treat GDPR and PDPA as interchangeable or assume either applies solely because a vendor is global. The earlier legal summary omitted PDPA.
+
+### Fast comparison drill
+
+Explain in a minute: CSF function vs CSF profile vs CSF tier; SP 800-39 tier vs FIPS impact level; SP 800-30 assessment vs SP 800-37 RMF; ISO SoA vs an SSP; and ISO certification vs a system ATO. Then pick a real mission system and trace one risk from enterprise objective through mission process to a system control and evidence.
+
+**Source path:** ISC2 self-paced Domain 1 lessons “NIST Cybersecurity Framework,” “NIST Organization-Wide Risk Management Framework,” “Tiers of Organization-Wide Risk Management,” “NIST Risk Assessment Framework,” “ISO Certification Process Overview,” and “Familiarity with Other National and International Laws and Requirements”; Official ISC2 CGRC Digital Textbook, 7th edition, sections 1.1 and 1.3. Open through the [ISC2 courses dashboard](https://www.isc2.org/Dashboard/Courses-Exams). No proprietary quiz or study-question items are reproduced.
