@@ -1,4 +1,6 @@
 # Domain 1 - General Security Concepts
+
+> Earlier personal draft retained for provenance. Its internal 1.1–1.8 headings are not the official SY0-701 numbering. For current notes aligned to the four CompTIA Domain 1 objectives, use the [objective index](../README.md). Some examples and terminology here may need revision before relying on them for exam preparation.
 **Goal of Domain 1:**
 Understand core security principles, security controls, risk management basics, cryptography fundamentals, and physical security.
 This domain sets the foundation for everything else in cybersecurity.
