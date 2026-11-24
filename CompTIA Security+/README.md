@@ -65,7 +65,7 @@ Use legitimate practice material and review explanations for every missed or gue
 
 ## Official objective cross-check
 
-The [official-objectives audit](official-objectives-audit.md) compares these notes against the attached official SY0-701 Exam Objectives Version 5.0 and records the newly added topics and remaining practice work. The public document linked above identifies itself as Version 7.0; the exam code, domain weights and 28 numbered objective IDs match, but do not assume every sub-bullet is word-for-word identical across revisions.
+The [official-objectives audit](official-objectives-audit.md) now uses the attached CompTIA SY0-701 V7 PDF as the scope baseline. A comparison with the earlier Version 5.0 copy found the same objective-body term inventory, five domain weights, and 28 objective IDs after normalizing PDF layout artifacts. Version 7.0 adds nine entries to the acronym appendix; see the audit for their meanings and relevant notes. This comparison is not a claim of exam mastery.
 
 ## Personal reference library
 
