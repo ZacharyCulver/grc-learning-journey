@@ -28,3 +28,7 @@ Expected retirement: May 2027
 ## Portfolio Goals
 
 This repository documents my learning journey, research, notes, and projects as I prepare for a cybersecurity career after military service.
+
+## Study Notes
+
+[CompTIA Security+ SY0-701 objective notes](CompTIA%20Security%2B/README.md)
