@@ -63,6 +63,10 @@ For each objective, read the exact official blueprint entry, then explain the co
 
 Use legitimate practice material and review explanations for every missed or guessed answer. Do not use recalled exam questions or “brain dumps.” The notes are for learning and portfolio documentation, not a substitute for actual hands-on practice or the full blueprint.
 
+## Official objective cross-check
+
+The [official-objectives audit](official-objectives-audit.md) compares these notes against the attached official SY0-701 Exam Objectives Version 5.0 and records the newly added topics and remaining practice work. The public document linked above identifies itself as Version 7.0; the exam code, domain weights and 28 numbered objective IDs match, but do not assume every sub-bullet is word-for-word identical across revisions.
+
 ## Personal reference library
 
 The [reference crosswalk](reference-map.md) maps all 28 objectives to printed page ranges in the attached Ramdayal and Messer notes and explains where the Dion, Underhill and Polynko documents fit. These PDFs are not hosted here; practice questions and answer keys remain in the original files. The official objectives, not any third-party guide, determine scope.
