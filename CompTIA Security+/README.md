@@ -1,8 +1,8 @@
 # CompTIA Security+ (SY0-701) study notes
 
-This section is an original, public-objective-based study guide for Security+ SY0-701 V7. I do **not** have a paid CompTIA course, official textbook, or licensed question bank. The [CompTIA exam objectives](https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be) are the scope reference; the explanations, scenarios and recall prompts here are my own notes, not CompTIA instructional material or recalled exam questions. Confirm the exam code at registration and do not mix objectives from a newer version.
+This section is an original, public-objective-based study guide for Security+ SY0-701 V7. My attached study library includes third-party guides and practice material, but this repository does not reproduce them or claim that they are official CompTIA training. The [CompTIA exam objectives](https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be) are the scope reference; the explanations, scenarios and recall prompts here are my own notes, not CompTIA instructional material or recalled exam questions. Confirm the exam code at registration and do not mix objectives from a newer version.
 
-The 28 numbered objectives below each have a first-pass note. These notes are **not a claim of mastery or exhaustive coverage of every sub-bullet** in CompTIA's blueprint. Work through the full official PDF to identify and fill any omissions, especially acronyms, protocols, ports and scenario tasks. Domain weights are the published SY0-701 blueprint weights, not a recommended allocation of time.
+The 28 numbered objectives below each have an expanded original note. These notes are **not a claim of mastery or exhaustive coverage of every sub-bullet** in CompTIA's blueprint. Work through the full official PDF to identify and fill any omissions, especially acronyms, protocols, ports and scenario tasks. Domain weights are the published SY0-701 blueprint weights, not a recommended allocation of time.
 
 | Domain | Weight | Objective notes |
 | --- | ---: | --- |
@@ -62,6 +62,10 @@ The 28 numbered objectives below each have a first-pass note. These notes are **
 For each objective, read the exact official blueprint entry, then explain the concept aloud without looking. Work the original scenario in the file and say why the chosen control or response fits better than plausible alternatives. Write down any missed terms, add a concise correction in your own words, and revisit it after one day, one week and during mixed-domain review. Practice performance-based tasks by drawing trust boundaries, interpreting log sequences, choosing configurations, and explaining risk decisions. Keep a record of accuracy by objective, not only a total score.
 
 Use legitimate practice material and review explanations for every missed or guessed answer. Do not use recalled exam questions or “brain dumps.” The notes are for learning and portfolio documentation, not a substitute for actual hands-on practice or the full blueprint.
+
+## Personal reference library
+
+The [reference crosswalk](reference-map.md) maps all 28 objectives to printed page ranges in the attached Ramdayal and Messer notes and explains where the Dion, Underhill and Polynko documents fit. These PDFs are not hosted here; practice questions and answer keys remain in the original files. The official objectives, not any third-party guide, determine scope.
 
 ## Free supporting references (not included CompTIA training)
 
